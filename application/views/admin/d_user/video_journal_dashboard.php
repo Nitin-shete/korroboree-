@@ -80,7 +80,7 @@
                   <td><?php echo $no++; ?></td>
                   <td style="font-weight: 700; color: #337eb0;"><?php echo $row->interviewee_name;?></td>
                   <td>
-                    <img name="image" style="height:40px; width:40px;" src="<?php echo base_url(); ?>uploads/<?php echo $row->interviewee_image ?>">
+                    <img name="image" style="height:40px; width:40px;" src="<?php echo base_url(); ?>uploads/images/<?php echo $row->interviewee_image ?>">
                       <!-- <img class="b-r-10" style="height:40px; width:40px;" src="uploads/<?php echo $row->interviewee_image;?>" alt=""> -->
                       </td>
 
@@ -98,7 +98,7 @@
 
                                           
                                           
-                   <a target="_blank" id="myFrame" href="<?php echo base_url();?>uploads/<?php echo $row->storyboard_file;?>" style="color:#f03f37; cursor: pointer;" type="button">
+                   <a target="_blank" id="myFrame" href="<?php echo base_url();?>uploads/files/<?php echo $row->storyboard_file;?>" style="color:#f03f37; cursor: pointer;" type="button">
                        <?php if(substr($row->storyboard_file,-3)=='pdf' ){?>
                     
                       <i class="far fa-file-pdf fa-2x"></i>

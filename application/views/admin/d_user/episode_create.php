@@ -94,29 +94,8 @@
                                       <input class="form-control" id="q_number" type="number" placeholder="Enter No of Question for Segment" onkeydown="javascript: return event.keyCode == 69 ? false : true" placeholder="0" required tabindex="6">
                                     </div>
                                   </div>
-                                  <div class="mb-3 row">
-                                    <label class="col-sm-3 col-form-label">Create Question for Segments</label>
-                                    <div class="col-sm-9">
-                                      <input class="form-control" type="text" placeholder="Create Question for Segments">
-                                    </div>
-                                  </div>
-                                  <div class="mb-3 row">
-                                    <label class="col-sm-3 col-form-label">Select Question Type</label>
-                                    <div class="col-sm-9">
-                                      <select class="custom-select form-select">
-                                         <option selected="">Select Question Type</option>
-                                         <option value="mcq">MCQ's</option>
-                                         <option value="single_choice">Single Choice</option>
-                                         <option value="three">Three</option>
-                                       </select>
-                                    </div>
-                                  </div>
-                                  <div class="mb-3 row">
-                                    <label class="col-sm-3 col-form-label">Enter No of Options for Question</label>
-                                    <div class="col-sm-9">
-                                      <input class="form-control" type="text" placeholder="Enter No of Options for Question">
-                                    </div>
-                                  </div>
+                              
+                             
                                   <div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">Create Options</label>
                                     <div class="col-sm-6">
@@ -130,6 +109,7 @@
                                         </select>
                                     </div>
                                   </div>
+
                                   <div id="view"></div>
                                   
 
@@ -203,6 +183,7 @@
       <script src="<?php echo base_url(); ?>assets/admin/d_user/assets/js/ecommerce.js"></script>
       <!-- Plugins JS Ends-->
       <!-- Theme js-->
+      
       <script src="<?php echo base_url(); ?>assets/admin/d_user/assets/js/script.js"></script>
     <script type="text/javascript">
       document.getElementById("year").innerHTML = new Date().getFullYear();
@@ -220,7 +201,7 @@ $('#q_number').on('change keyup',function(){
  
 
   for(let i = 0;i<value;i++){
-    inputs += `<div class="mb-3 row">
+    inputs +=         `<div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">Create Question for Segments</label>
                                     <div class="col-sm-9">
                                       <input class="form-control" type="text" placeholder="Create Question for Segments">
@@ -240,25 +221,15 @@ $('#q_number').on('change keyup',function(){
                                   <div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">Enter No of Options for Question</label>
                                     <div class="col-sm-9">
-                                      <input class="form-control" id="options_number" placeholder="Enter No of Options for Question"type="number" placeholder="Enter No of Question for Segment" onkeydown="javascript: return event.keyCode == 69 ? false : true" placeholder="0" required tabindex="6">
+                                      <input class="form-control options_number"  placeholder="Enter No of Options for Question" type="number" onchange="add(this);"  placeholder="0" required tabindex="6">
                                     </div>
-                                  </div>
-                                  <div id="options"></div>
-                                  <div class="mb-3 row">
-                                    <label class="col-sm-3 col-form-label">Create Options</label>
-                                    <div class="col-sm-6">
-                                      <input class="form-control" type="text" placeholder="Type your title in Placeholder">
-                                    </div>
-                                    <div class="col-sm-3">
-                                       <select class="custom-select form-select">
-                                          <option selected="">Select Answer Type</option>
-                                          <option value="1">YES</option>
-                                          <option value="2">NO</option>
-                                        </select>
-                                    </div>
+                                  </div> 
+                                  
+                                  <div class="optionsx" style="border:none "></div>
+                                 
                                   </div>` 
   }
-   $('#s_n').val(value);
+   $('#s_n').val(value);;
    $('#topnum').val(value)
 
   $('#s_n').html(value)
@@ -266,12 +237,13 @@ $('#q_number').on('change keyup',function(){
 
 })
 
-$('#options_number').on('change keyup',function(){
-  let inputs = '';
-  let value = parseInt($(this).val());
- 
 
-  for(let i = 0;i<value;i++){
+
+function add(x){
+  let inputs = '';
+  let value = parseInt($(x).val());
+  //alert(value);
+     for(let i = 0;i<value;i++){
     inputs += ` <div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">Create Options</label>
                                     <div class="col-sm-6">
@@ -283,14 +255,9 @@ $('#options_number').on('change keyup',function(){
                                           <option value="1">YES</option>
                                           <option value="2">NO</option>
                                         </select>
-                                  </div>` 
+                                  </div></div>` 
   }
-   $('##options_number').val(value);
-   $('#topnum').val(value)
-
-  $('#s_n').html(value)
-  $('#options').html(inputs)
-
-})
+    $('.optionsx').html(inputs)
+}
 </script>
 </html>

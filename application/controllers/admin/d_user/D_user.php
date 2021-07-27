@@ -19,9 +19,8 @@ class D_user extends CI_Controller {
 	}
 	
  public function video_journal_dashboard()
-
 	{	 $data['v']=$this->D_user_model->fetch_video_journal();	
-		  $this->load->view('admin/d_user/header');
+		     $this->load->view('admin/d_user/header');
 			$this->load->view('admin/d_user/video_journal_dashboard',$data);
 			$this->load->view('admin/d_user/footer');
 	}
@@ -51,7 +50,6 @@ public function episode_update()
 			$this->load->view('admin/d_user/episode_update');
 			$this->load->view('admin/d_user/footer');
 	}
-
 
 
 

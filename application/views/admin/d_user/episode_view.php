@@ -134,7 +134,7 @@
 
                                           
                                           
-                   <a target="_blank" id="myFrame" href="<?php echo base_url();?>uploads/<?php echo $row->storyboard_file;?>" style="color:#f03f37; cursor: pointer;" type="button">
+                   <a target="_blank" id="myFrame" href="<?php echo base_url();?>uploads/files/<?php echo $row->storyboard_file;?>" style="color:#f03f37; cursor: pointer;" type="button">
                        <?php if(substr($row->storyboard_file,-3)=='pdf' ){?>
                     
                       <i class="far fa-file-pdf fa-2x"></i>
@@ -153,7 +153,7 @@
                         <?php }?>
                    
                      
-                    </a>
+                    </a>   
                     
                                           <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                              <div class="modal-dialog modal-lg">
@@ -164,7 +164,7 @@
                                                       </div>
                                                       <div class="modal-body">
                                                          <!-- <embed src="<?php echo base_url(); ?>assets/admin/d_user/assets/doc/document.pdf" type="application/pdf" width="100%" height="600px" /> -->
-                                                         <iframe src="<?php echo base_url();?>uploads/<?php echo $row->storyboard_file;?>"    frameborder="0" width="100%" height="700px"></iframe>
+                                                         <iframe src="<?php echo base_url();?>uploads/files/<?php echo $row->storyboard_file;?>"    frameborder="0" width="100%" height="700px"></iframe>
                                                       </div>
                                                 </div>
                                              </div>

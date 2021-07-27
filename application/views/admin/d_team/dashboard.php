@@ -45,36 +45,38 @@
                <div class="container-fluid">
                   <div class="row second-chart-list third-news-update">
                      <div class="col-xl-4 col-lg-12 xl-50 morning-sec box-col-12">
-                        <div class="card o-hidden profile-greeting">
-                           <div class="card-body">
-                              <div class="greeting-user text-center">
+                         <!--<div class="card o-hidden profile-greeting">
+                           <div class="card-body">-->
+                              <div class="greeting-user text-center"> 
                                  <div class="profile-vector">
-									         <img class="img-fluid" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/dashboard/welcome.png" alt="">
-								         </div>
+                                    
+                                 
+                                 <div class="vd">
+                                 <img class="img-fluid" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/dashboard/in.png" alt="">
+                                </div>
                                  <h4 class="f-w-600">
-									         <span>Interactive Journal</span> 
-									         <span class="right-circle">
-										         <i class="fa fa-check-circle f-14 middle"></i>
-									         </span>
-								         </h4>
-                                 <p>
-									         <span> 
-										         If you are reading this you are committed to learning and growing. Let’s keep going.
-									         </span>
-								         </p>
+                                    <span>Interactive Journal</span> 
+                                    <span class="right-circle">
+                                       <i class="fa fa-check-circle f-14 middle"></i>
+                                    </span>
+                                 </h4>
+                                 
                                  <div class="whatsnew-btn">
-									         <a class="btn btn-primary">Let's Go!</a>
-								         </div>
-                              </div>
-                           </div>
-                        </div>
+                                    <a class="btn btn-primary">Let's Go!</a>
+                                 </div>
+                                 </div>
+                              <!-- </div>
+                           </div>-->
+                        </div> 
                      </div>
                      <div class="col-xl-4 col-lg-12 xl-50 morning-sec box-col-12">
-                        <div class="card o-hidden profile-greeting">
-                           <div class="card-body">
+                        <!-- <div class="card o-hidden profile-greeting">
+                           <div class="card-body"> -->
                               <div class="greeting-user text-center">
                                  <div class="profile-vector">
-									         <img class="img-fluid" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/dashboard/welcome.png" alt="">
+                                 <div class="in">
+                                 <img class="img-fluid" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/dashboard/vd.png" alt="">
+                                </div>
 								         </div>
                                  <h4 class="f-w-600">
 									         <span>Video Journal</span> 
@@ -82,16 +84,16 @@
 										         <i class="fa fa-check-circle f-14 middle"></i>
 									         </span>
 								         </h4>
-                                 <p>
+                                 <!-- <p>
 									         <span> 
 										         Perseverance is a success mindset. The next learning segment awaits!
 									         </span>
-								         </p>
+								         </p> -->
                                  <div class="whatsnew-btn">
 									         <a class="btn btn-primary" href="<?php echo base_url();?>admin/video_journal">Let's Go!</a>
 								         </div>
-                              </div>
-                           </div>
+                              <!-- </div>
+                           </div> -->
                         </div>
                      </div>
                   </div>
