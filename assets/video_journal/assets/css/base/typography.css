@@ -1,0 +1,14 @@
+.section-title-long, .section-que-long {
+    font-size: 25px;
+}
+
+.section-title-short, .section-que-short, .section-optns {
+    font-size: 22px;
+}
+.txt_seg{
+    font-size: 16px;
+}
+.txt2_seg{
+    font-size: 18px;
+    margin-top: 7px;
+}

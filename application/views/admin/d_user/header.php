@@ -44,6 +44,7 @@
       <link id="color" rel="stylesheet" href="<?php echo base_url(); ?>assets/admin/d_user/assets/css/color-1.css" media="screen">
       <!-- Responsive css-->
       <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/admin/d_user/assets/css/responsive.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    </head>
    <body>
       <!-- page-wrapper Start-->
@@ -53,7 +54,7 @@
             <div class="header-wrapper row m-0">
                <div class="header-logo-wrapper col-auto p-0">
                   <div class="logo-wrapper">
-                                <a href="../index.html">
+                                <a href="#">
                                       <img class="img-fluid" src="<?php echo base_url(); ?>assets/admin/d_user/assets/images/logo/logo2.png" alt="" />
                                 </a>
                           </div>

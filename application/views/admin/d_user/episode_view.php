@@ -6,8 +6,8 @@
             <div class="sidebar-wrapper">
                <div>
                   <div class="logo-wrapper">
-                     <a href="../dashboard.html">
-                        <img class="img-fluid for-light" src="<?php echo base_url(); ?>assets/admin/d_user/assets/images/logo/logo1.png" alt="">
+                     <a href="#">
+                        <img class="img-fluid for-light" src="<?php echo base_url(); ?>assets/admin/d_user/assets/images/logo/5thdt.png" alt="">
                 </a>
                      <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                      <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
@@ -29,7 +29,7 @@
                         <div class="col-6">
                            <ol class="breadcrumb">
                               <li class="breadcrumb-item">
-                                 <a href="../dashboard.html">
+                                 <a href="#">
                                     <i data-feather="home"></i>
                                  </a>
                               </li>
@@ -48,6 +48,7 @@
                           <div class="card-body">
                             <div class="product-page-details">
                               <h3>Video Journal</h3>
+                               <div style="text-align: center;"><?php echo $this->session->flashdata("success"); ?></div>
                             </div>
                             <hr>
                             <div>
@@ -196,15 +197,15 @@
                                    <div class="add-task-btn-wrapper">
                                       <span class="add-task-btn">
 
-                                        <form  method="post" id="<?php echo $row->id ?>" novalidate="" enctype="   multipart/form-data" action="<?php base_url(); ?>episode_create"> 
+                                        <form  method="post" id="<?php echo $row->id ?>" novalidate="" enctype="multipart/form-data" action="<?php base_url(); ?> episode_create"> 
                                         <input type="hidden" value="<?php echo $row->id;?>" name="id">
                                           <a  style="color:#337eb0; cursor: pointer; font-weight: 600;"onclick="document.getElementById('<?php echo $row->id ?>').submit();">
-                                             <button class="btn btn-primary"><i class="icon-plus"></i> Create New Episode</button>
+                                             <button class="btn btn-primary"><i class="icon-plus"></i> Create New Segment</button>
                                           </a> </form>
 
                                           <?php }} ?>
 
-<!-- 
+<!--  
                                           <form  method="post" id="<?php echo $row->id ?>" novalidate="" enctype="multipart/form-data" action="<?php base_url(); ?>episode_view"> 
                      <input type="hidden" value="<?php echo $row->id;?>" name="id">
                     <a  style="color:#337eb0; cursor: pointer; font-weight: 600;"onclick="document.getElementById('<?php echo $row->id ?>').submit();">
@@ -214,13 +215,38 @@
                                        </span>
                                     </div>
                                  </div>
+
                                  <div class="todo-list-body">
                                    <ul id="todo-list">
+ 
+                                     <?php if (!empty($vs)) {  
+                                    foreach ($vs as $row){ ?> 
+
                                      <li class="task">
                                        <div class="task-container">
-                                         <h4 class="task-label">Weekly Bigbazar Shopping </h4>
+                                         <h4 class="task-label"><?php echo $row->page_title; ?></h4>
+
                                          <span class="task-action-btn">
-                                            <span class="action-box large delete-btn" title="Delete Task"><i class="icon"><i class="icon-trash"></i></i></span>
+                                         <!-- delet segmetn video -->
+
+                                            
+                                        
+                                    <span class="action-box large delete-btn" title="Delete Task"> 
+                                       <form  method="post" id="<?php echo $row->id ?>" novalidate="" enctype="multipart/form-data" action="<?php base_url(); ?>video_segment_delete"> 
+                     <input type="hidden" value="<?php echo $row->id;?>" name="id">
+                    <a  style="color:#337eb0; cursor: pointer; font-weight: 600;"onclick="document.getElementById('<?php echo $row->id ?>').submit();">
+                                            <i class="icon"> <i class="icon-trash"></i></i>
+                                        </a></form>
+
+                                            
+                                           
+                                        
+                                  
+                                            
+                                    </span> 
+                                 
+
+
                                             <a href="<?php echo base_url(); ?>admin/v5/episode_update">
                                              <span class="action-box large complete-btn" title="Edit Task"><i class="icon"><i class="icon-pencil"></i></i></span>
                                             </a>
@@ -228,32 +254,13 @@
                                          </span>
                                        </div>
                                      </li>
-                                     <li class="task">
-                                       <div class="task-container">
-                                         <h4 class="task-label">Go Outside Picnic on Sunday</h4>
-                                         <span class="task-action-btn">
-                                            <span class="action-box large delete-btn" title="Delete Task"><i class="icon"><i class="icon-trash"></i></i></span>
-                                            <a href="episode_update.html">
-                                             <span class="action-box large complete-btn" title="Edit Task"><i class="icon"><i class="icon-pencil"></i></i></span>
-                                            </a>
-                                            <span class="action-box large complete-btn" title="View Task"><i class="icon"><i class="icon-desktop"></i></i></span>
-                                         </span>
-                                       </div>
-                                     </li>
-                                     <li class="task">
-                                       <div class="task-container">
-                                         <h4 class="task-label">Write a blog post </h4>
-                                         <span class="task-action-btn">
-                                            <span class="action-box large delete-btn" title="Delete Task"><i class="icon"><i class="icon-trash"></i></i></span>
-                                            <a href="episode_update.html">
-                                             <span class="action-box large complete-btn" title="Edit Task"><i class="icon"><i class="icon-pencil"></i></i></span>
-                                            </a>
-                                            <span class="action-box large complete-btn" title="View Task"><i class="icon"><i class="icon-desktop"></i></i></span>
-                                         </span>
-                                       </div>
-                                     </li>
+                                     
+                                     <?php }} ?>
+
+
                                    </ul>
                                  </div>
+
                                </div>
                              </div>
                              <div class="notification-popup hide">
@@ -288,6 +295,8 @@
          </div>
       </div>
       <!-- latest jquery-->
+
+
       <script src="<?php echo base_url(); ?>assets/admin/d_user/assets/js/jquery-3.5.1.min.js"></script>
       <!-- Bootstrap js-->
       <script src="<?php echo base_url(); ?>assets/admin/d_user/assets/js/bootstrap/bootstrap.bundle.min.js"></script>

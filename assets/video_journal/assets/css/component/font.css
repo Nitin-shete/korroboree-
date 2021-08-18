@@ -1,0 +1,31 @@
+
+@charset "utf-8";
+
+@font-face {
+   font-family: "tahoma";
+   src: url("../fonts/Tahoma\ Regular\ font.ttf") format("truetype") !important;
+   src: url("../fonts/TAHOMA_0.TTF") format("truetype") !important;
+   src: url("../fonts/TAHOMAB0.TTF") format("truetype") !important;
+   src: url("../fonts/TAHOMABD.TTF") format("truetype") !important;
+}
+
+@font-face {
+   font-family: "Montserrat";
+   src: url("../fonts/Montserrat-Bold.otf") format("truetype") !important;
+} 
+
+.font_tahoma{
+    font-family: Tahoma regular !important;
+}
+.txt_center{
+ align-items: center;
+}
+.btn{
+   font-family: Tahoma regular !important;
+}
+.text-left {
+   text-align: left !important;
+   height: 50px;
+   font-family: tahoma regular !important;
+}
+

@@ -7,13 +7,13 @@
             <div class="sidebar-wrapper">
                <div>
                   <div class="logo-wrapper">
-                     <a href="dashboard.html">
-                        <img class="img-fluid for-light" src="<?php echo base_url(); ?>assets/admin/d_user/assets/images/logo/logo1.png" alt="">
+                     <a href="#">
+                        <img class="img-fluid for-light" src="<?php echo base_url(); ?>assets/admin/d_user/assets/images/logo/5thdt.png" alt="">
                      </a>
                      <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                      <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
                   </div>
-                  <div class="logo-icon-wrapper"><a href="<?php echo base_url();?>admin/v5/dashboard"><img class="img-fluid" src="../<?php echo base_url(); ?>assets/admin/d_user/assets/images/logo/favicon_1.png" alt=""></a></div>
+                  <div class="logo-icon-wrapper"><a href="<?php echo base_url();?>admin/v5/dashboard"><img class="img-fluid" src="<?php echo base_url(); ?>assets/admin/d_user/assets/images/logo/favicon_1.png" alt=""></a></div>
                   
                   <?php include("side_bar.php");?>
 

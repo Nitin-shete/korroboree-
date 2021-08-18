@@ -8,13 +8,13 @@
             <div class="sidebar-wrapper">
                <div> 
                   <div class="logo-wrapper">
-                     <a href="../dashboard.html">
-                        <img class="img-fluid for-light" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/logo/logo1.png" alt="">
+                     <a href="#">
+                        <img class="img-fluid for-light" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/logo/5thdt.png" alt="">
                 </a>
                      <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                      <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
                   </div>
-                  <div class="logo-icon-wrapper"><a href="../dashboard.html"><img class="img-fluid" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/logo/favicon_1.png" alt=""></a></div>
+                  <div class="logo-icon-wrapper"><a href="#"><img class="img-fluid" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/logo/favicon_1.png" alt=""></a></div>
                  <?php include("side_bar.php"); ?>
 
                </div>
@@ -30,7 +30,7 @@
                         <div class="col-6">
                            <ol class="breadcrumb">
                               <li class="breadcrumb-item">
-                                 <a href="../dashboard.html">
+                                 <a href="#">
                                     <i data-feather="home"></i>
                                  </a>
                               </li>
@@ -72,10 +72,10 @@
                   <?php if (!empty($v)) {
                                                $no = 1;
                                             foreach ($v as $row) {
-                      //  $id= $row->episode_number;
+                  
                                             
                                           ?> 
-
+ 
                   
                   <td><?php echo $no++; ?></td>
                   <td style="font-weight: 700; color: #337eb0;"><?php echo $row->interviewee_name;?></td>

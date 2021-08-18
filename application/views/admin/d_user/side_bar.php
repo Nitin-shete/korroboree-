@@ -5,7 +5,7 @@
                      <div id="sidebar-menu">
                         <ul class="sidebar-links" id="simple-bar">
                            <li class="back-btn">
-                              <a href="../dashboard.html"><img class="img-fluid" src="<?php echo base_url();?>assets/admin/d_user/assets/images/logo/favicon_1.png" alt="" /></a>
+                              <a href="#"><img class="img-fluid" src="<?php echo base_url();?>assets/admin/d_user/assets/images/logo/favicon_1.png" alt="" /></a>
                               <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                            </li>
                            <!-- <li class="sidebar-main-title">

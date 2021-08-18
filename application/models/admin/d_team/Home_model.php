@@ -76,6 +76,15 @@ function __construct(){
 
 
 
+      // public function fetch_question(){
+
+      //   $this->db->select("*");
+      //   $this->db->from('v');
+      //   $this->db->where('id',$id);
+
+      // }
+
+
    
 }
  ?>

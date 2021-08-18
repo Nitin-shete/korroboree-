@@ -7,7 +7,7 @@
                <div>
                   <div class="logo-wrapper">
                      <a href="../dashboard.html">
-                        <img class="img-fluid for-light" src="<?php echo base_url(); ?>assets/admin/d_user/assets/images/logo/logo1.png" alt="">
+                        <img class="img-fluid for-light" src="<?php echo base_url(); ?>assets/admin/d_user/assets/images/logo/5thdt.png" alt="">
                 </a>
                      <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                      <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>

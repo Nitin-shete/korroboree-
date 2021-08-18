@@ -49,8 +49,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
-$route['404_override'] = '';
+ $route['default_controller'] = 'welcome';
+ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE; 
 
 //admin D_team
@@ -72,6 +72,91 @@ $route['admin/v5/video_journal'] = 'admin/d_user/D_user/video_journal_dashboard'
 $route['admin/v5/episode_view'] = 'admin/d_user/D_user/episode_view';
 $route['admin/v5/episode_create'] = 'admin/d_user/D_user/episode_create';
 $route['admin/v5/episode_update'] = 'admin/d_user/D_user/episode_update';
+$route['admin/v5/video_save'] = 'admin/d_user/D_user/video_segment_save';
+$route['admin/v5/video_segment_delete'] ='admin/d_user/D_user/video_segment_delete';
+
+
+
+//web site  
+
+
+$route['Home']='web/Home';
+$route['parent']='web/Home/parent';
+$route['parent_video']='web/Home/parent_video';
+
+$route['student']='web/Home/student';
+$route['student_video']='web/Home/student_video';
+
+$route['teacher']='web/Home/teacher';
+$route['teacher_video']='web/Home/teacher_video';
+$route['signup']='web/Home/sign_up';
+$route['signin']='web/Home/signin';
+$route['AR']='web/Home/ar_bio';
+$route['Lina']='web/Home/lina_bio';
+$route['privacy_policy']='web/Home/privacy_policy';
+$route['terms_conditions']='web/Home/terms_conditions';
+$route['contact']='web/Home/contact';
+$route['cart']='web/Home/cart';
+
+
+
+
+//Student dashboard
+
+
+$route['my_account'] = 'web/Sdashboard/my_account';
+$route['shop_item'] = 'web/Sdashboard/shop_item';
+$route['return'] = 'web/Sdashboard/return';
+$route['account_info'] = 'web/Sdashboard/account_info';
+$route['review_rating'] = 'web/Sdashboard/review_rating';
+$route['modify_address'] = 'web/Sdashboard/modify_address';
+$route['order_history'] = 'web/Sdashboard/order_history';
+$route['change_password'] = 'web/Sdashboard/change_password';
+$route['newsletter'] = 'web/Sdashboard/newsletter';
+
+
+$route['user_data'] = 'web/Sdashboard/signup_process';
+$route['signin_check'] = 'web/Sdashboard/signin_process';
+
+
+
+
+
+//video_journal
+
+$route['video_journal'] = 'journal_video/Video_j';
+$route['video_journal/intro'] = 'journal_video/Video_j/intro';
+$route['video_journal/seg1'] = 'journal_video/Video_j/seg1';
+$route['video_journal/seg2'] = 'journal_video/Video_j/seg2';
+$route['video_journal/seg3'] = 'journal_video/Video_j/seg3';
+$route['video_journal/seg4'] = 'journal_video/Video_j/seg4';
+$route['video_journal/seg5'] = 'journal_video/Video_j/seg5';
+$route['video_journal/seg6'] = 'journal_video/Video_j/seg6';
+$route['video_journal/seg7'] = 'journal_video/Video_j/seg7';
+$route['video_journal/seg8'] = 'journal_video/Video_j/seg8';
+$route['video_journal/seg9'] = 'journal_video/Video_j/seg9';
+$route['video_journal/seg10'] = 'journal_video/Video_j/seg10';
+$route['video_journal/seg11'] = 'journal_video/Video_j/seg11';
+$route['video_journal/seg12'] = 'journal_video/Video_j/seg12';
+$route['video_journal/seg13'] = 'journal_video/Video_j/seg13';
+$route['video_journal/seg14'] = 'journal_video/Video_j/seg14';
+
+
+$route['video_journal/quet1'] = 'journal_video/Video_j/quet1';
+$route['video_journal/quet2'] = 'journal_video/Video_j/quet2';
+$route['video_journal/quet3'] = 'journal_video/Video_j/quet3';
+$route['video_journal/quet4'] = 'journal_video/Video_j/quet4';
+$route['video_journal/quet5'] = 'journal_video/Video_j/quet5';
+$route['video_journal/quet6'] = 'journal_video/Video_j/quet6';
+$route['video_journal/quet7'] = 'journal_video/Video_j/quet7';
+$route['video_journal/quet8'] = 'journal_video/Video_j/quet8';
+$route['video_journal/quet9'] = 'journal_video/Video_j/quet9';
+$route['video_journal/quet10'] = 'journal_video/Video_j/quet10';
+$route['video_journal/quet11'] = 'journal_video/Video_j/quet11';
+$route['video_journal/quet12'] = 'journal_video/Video_j/quet12';
+$route['video_journal/quet13'] = 'journal_video/Video_j/quet13';
+$route['video_journal/quet14'] = 'journal_video/Video_j/quet14';
+
 
 
 

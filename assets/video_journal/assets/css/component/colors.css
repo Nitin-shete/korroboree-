@@ -1,0 +1,53 @@
+.bg-grey-light {
+    background-color: #6D6D6D;
+}
+.txt-grey-light {
+    color: #6D6D6D;
+}
+
+.bg-grey-dark {
+    background-color: #393939;
+}
+.txt_wht{
+  color: white;
+  
+}
+
+
+.bg-white {
+    background-color: #FFFFFF !important;
+}
+
+.button-yellow, .card-yellow {
+    background-color: #F9BB30;
+}
+
+.bg-wrong {
+    background-color: #FEC3C3;
+}
+
+.bg-right {
+    background-color: #9EFB87;
+}
+
+
+
+.txt-grey-dark {
+    color: #393939;
+}
+.bg-grey-dark {
+    color: #393939;
+}
+
+.txt-yellow {
+    color: #FFCC2A;
+}
+.bg-yellow{
+    background-color: #FFCC2A;
+}
+.ico_clr{
+    color: #414141;
+}
+.seg_clr{
+    color: #A8A8A8;
+}

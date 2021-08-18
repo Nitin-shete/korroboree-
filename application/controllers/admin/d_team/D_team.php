@@ -52,7 +52,8 @@ class D_team extends CI_Controller {
 			$this->session->set_flashdata('error','Invalid Username or password');
 		    redirect('admin');
 		}
-		    if($data->num_rows() >0){
+
+		  if($data->num_rows() >0){
           $userdata=$data->row_array();
          $id  =  $userdata['id'];
          $adminname =  $userdata['username'];
@@ -198,14 +199,13 @@ class D_team extends CI_Controller {
 				unset($data['submit']);                             
 		         $this->load->model('Home_model');
 				$this->Home_model->saverecords($data);
-			
+			$this->session->set_flashdata('success','Video journal successfully create');
 			 redirect("admin/video_journal");
 
 
 	}
 
-
-
+ 
 
 
 

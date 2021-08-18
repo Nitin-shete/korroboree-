@@ -41,9 +41,9 @@
                <div class="login-card">
                   <div>
                      <div>
-						 <a class="logo text-start" href="index.html">
-							 <img class="img-fluid for-light" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/logo/logo2.png" alt="looginpage" />
-							 <img class="img-fluid for-dark" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/logo/logo2.png" alt="looginpage" />
+						 <a class="logo text-start" href="#">
+							 <img class="img-fluid for-light" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/logo/flogo.png" alt="looginpage" />
+							 <!-- <img class="img-fluid for-dark" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/logo/logo2.png" alt="looginpage" /> -->
 						 </a>
 					 </div>
                      <div class="login-main">
@@ -67,6 +67,8 @@
                                  <label class="text-muted" for="checkbox1">Remember password</label>
                               </div>
                               <button class="btn btn-primary btn-block w-100" type="submit">Sign in</button>
+                              <br>
+                              <?php echo '<label class="text-danger">' .$this->session->flashdata("error"); '</lable>' ?>
                            </div>
                         </form>
                      </div>

@@ -1,0 +1,6 @@
+.d_shadow{
+        filter:drop-shadow(8px 8px 8px rgba(43, 41, 41, 0.781));
+}
+.b_shadow{
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(10 10 10 / 22%);
+}

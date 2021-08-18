@@ -154,7 +154,7 @@
                               </div>
                             </div>
                             <hr>
-                            <div>
+                           <!--  <div>
                               <h5>Question 2:</h5>
                             </div>
                             <hr>
@@ -168,7 +168,11 @@
                                     Answer : Try to tell him/her to be nice to the bullies and at bedtime tell her about how your best-friendship started with an argument
                                 </p>
                               </div>
-                            </div>
+                            </div> -->
+
+
+                            
+
                           </div>
                         </div>
                       </div>

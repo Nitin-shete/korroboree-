@@ -1,0 +1,523 @@
+
+
+@media only screen and (min-device-width : 1921px) and (max-device-width : 2560px) {
+    .explore_txt {
+        bottom: 95px;
+        font-size: 25px;
+    } 
+    .rick_back img {
+        width: 43rem;
+        margin-top: 30px;
+        
+    }
+    .rick_back {
+        height: 54rem;
+        width: 47rem;
+        margin-top: 93px;
+    }
+    .midrow {
+        height: 51rem;
+    }
+    .midrow_vid {
+        height: 52.7rem;
+    }
+    .introd {
+        height: 54rem;
+        width: 82rem;
+        margin-top: 93px;
+    }
+    .introd h2 {
+        font-size: 40px;
+        padding: 21px;
+    }
+    .snd {
+        font-size: 24px;
+        margin-top: 18px;
+    }
+    .fst {
+        font-size: 30px;
+        margin-top: 25px;
+    }
+    .introd p {
+        width: 88%;
+        font-size: 26px;
+        line-height: 44px;
+    }
+    .list-unstyled {
+        font-size: 23px;
+    }
+    nav ul li {
+        font-size: 25px;
+        width: 100%;
+        height: 60px;
+        line-height: 67px;
+    }
+    .txt2_seg {
+        font-size: 30px;
+        margin-top: 27px;
+    }
+    .txt_seg {
+        font-size: 28px;
+    }
+    .seg_back {
+        height: 9rem;
+        margin-left: 75px;
+        margin-top: 50px;
+    }
+    .video_size {
+        margin-top: 128px;
+    }
+    .que_bg {
+        height: 51.7rem;
+        margin-left: 76px;
+    }
+    .que {
+        font-size: 37px;
+        margin-top: 10px;
+        padding: 34px;
+    }
+    .opt_que{
+        font-size: 32px;
+        height: 100px;
+        margin-top: 22px;
+    }
+    .opt_que_input {
+        margin-top: 16px;
+        height: 10rem;
+        width: 98%;
+    }
+    .tool:hover span {
+        bottom: 60px;
+        visibility: visible;
+        opacity: 1;
+    }
+    .back {
+        width: 80px;
+        height: 80px;
+        /* margin-left: 131px; */
+        margin-top: 22rem;
+    }
+    
+    .next{
+        width: 80px;
+        height: 80px;
+        margin-top: 22rem;
+    }
+    .feather {
+        width: 77px;
+        height: 77px;
+    }
+    footer {
+        height: 90px;
+    }
+    .crcl {
+        width: 90px;
+        height: 90px;
+    }
+    .ex {
+        font-size: 50px;
+    }
+    .check{
+        font-size: 50px;
+    }
+    .que2_op1_rht {
+        font-size: 50px; 
+    }
+    .progress {
+        height: 28px;
+        width: 35rem;
+    }
+    a.trigger {
+        right: 35px;
+        top: 36px;
+
+    }
+    a.trigger span {
+        width: 63px;
+        height: 5px;
+        left: -9px;
+    }
+    a.trigger span:before {
+        width: 63px;
+        height: 5px;
+        top: -13px;
+    }
+    a.trigger span:after{
+        width: 63px;
+        height: 5px;
+        bottom: -13px;
+    }
+    .cd-popup-container {
+        max-width: 40rem;
+        font-size: 32px;
+    }
+    .modal-dialog {
+        max-width: 85rem;
+        margin-top: 21rem;
+    }
+    #t1 {
+        height: 9rem;
+        font-size: 27px;
+        width: 68rem;
+    }
+    #t2 {
+        height: 9rem;
+        font-size: 27px;
+        width: 68rem;
+    }
+    #t3 {
+        height: 9rem;
+        font-size: 27px;
+        width: 68rem;
+    }
+    .modal-body {
+        border-bottom: 0;
+        padding-top: 4px;
+        padding-right: 26px;
+        padding-left: 48px;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+    .input_size {
+        font-size: 25px;
+    }
+    .btn{
+        font-size: 25px;
+    }
+    .close {
+        font-size: 35px;
+    }
+    .scroll {
+        margin: 4px, 4px;
+        padding: 7px;
+        width: 73rem;
+        height: 463px;
+    }
+    .social-icons .fa {
+        width: 77px;
+        height: 77px;
+        line-height: 77px;
+    }
+    .modal-content {
+        height: 33rem;
+        width: 74rem;
+    }
+    .modal_body {
+        width: 75rem !important;
+        height: auto !important;
+    }
+  
+    .cards {
+        grid-gap: 56px;
+    }
+
+.card_title {
+    font-size: 20px;
+}
+.cardbtn {
+    font-size: 15px !important;
+}
+.cards_item {
+    width: 18.3333% !important;
+}
+}
+
+
+
+@media only screen and (min-device-width : 1701px) and (max-device-width : 1920px) {
+ 
+    .explore_txt {
+        bottom: 95px;
+        font-size: 25px;
+    } 
+    .rick_back img {
+        width: 33rem;
+        margin-top: 30px;
+    }
+    .rick_back {
+        height: 42rem;
+        width: 42rem;
+        margin-top: 40px;
+    }
+    .p_sec {
+        padding-bottom: 8px;
+        margin-top: 0px;
+    }
+    .midrow {
+        height: 38rem;
+    }
+    .midrow_vid {
+        height: 39.7rem;
+    }
+    .introd {
+        height: 42rem;
+        width: 63rem;
+        margin-top: 40px;
+    }
+    .introd h2 {
+        font-size: 30px;
+        padding: 21px;
+    }
+    .snd {
+        font-size: 24px;
+        margin-top: 18px;
+    }
+    .fst {
+        font-size: 30px;
+    }
+    .introd p {
+        width: 88%;
+        font-size: 23px;
+        line-height: 32px;
+    }
+    .social-icons .fa {
+        font-size: 25px;
+    }
+    .list-unstyled {
+        font-size: 23px;
+    }
+    nav ul li {
+        font-size: 18px;
+        width: 100%;
+        height: 54px;
+        line-height: 33px;
+    }
+    .txt2_seg {
+        font-size: 24px;
+        margin-top: 19px;
+    }
+    .txt_seg {
+        font-size: 22px;
+    }
+    .seg_back {
+        height: 8rem;
+        margin-left: 54px;
+        margin-top: 26px;
+    }
+    .que_bg {
+        width: 90%;
+        border-radius: 5px;
+        height: 35.7rem;
+        margin-left: 55px;
+        margin-top: 36px;
+    }
+    .video_size {
+        margin-top: 95px;
+    }
+    
+   .que {
+    font-size: 25px;
+    padding: 31px
+    }
+     
+    .opt_que {
+        font-size: 22px;
+        height: 77px;
+        margin-top: 21px;
+    }
+    .opt_que_input {
+        height: 7rem;
+        font-size: 22px;
+    }
+    .modal-dialog {
+        margin-top: 225px;
+    }
+    .back {
+        width: 52px;
+        height: 52px;
+        margin-top: 18rem;
+        /* margin-left: 103px; */
+    }
+    .next{
+        width: 52px;
+        height: 52px;
+        margin-top: 18rem;
+    }
+    footer {
+        height: 60px;
+    }
+    .ex {
+        font-size: 28px;
+    }
+    .check{
+        font-size: 28px;
+    }
+    .que2_op1_rht {
+        font-size: 28px; 
+    }
+    .cd-popup-container {
+        font-size: 22px;
+        margin: 13em auto;
+    }
+    #t1 {
+        height: 8rem;
+        font-size: 16px;
+        width: 43rem;
+    }
+    #t2 {
+        height: 8rem;
+        font-size: 16px;
+        width: 43rem;
+    }
+    #t3 {
+        height: 8rem;
+        font-size: 16px;
+        width: 43rem;
+    }
+    .input_size {
+        font-size: 20px;
+    }
+    .modal-content {
+        height: 26rem;
+        width: 56rem;
+    }
+    .scroll {
+        padding: 4px;
+        width: 878px;
+        height: 353px;
+    }
+    
+}
+
+
+
+@media only screen and (min-device-width : 1501px) and (max-device-width : 1700px) {
+    
+    .explore_txt {
+        bottom: 95px;
+        font-size: 25px;
+    } 
+    .rick_back img {
+        width: 29rem;
+        margin-top: 39px;
+    }
+    .rick_back {
+        height: 39rem;
+        width: 34rem;
+        margin-top: 47px;
+    }
+    .midrow {
+        height: 34rem;
+    }
+    .midrow_vid {
+        height: 35.7rem;
+    }
+    .introd {
+        height: 39rem;
+        width: 53rem;
+        margin-top: 47px;
+    }
+    .introd h2 {
+        font-size: 30px;
+        padding: 21px;
+    }
+    .snd {
+        font-size: 24px;
+        margin-top: 18px;
+    }
+    .fst {
+        font-size: 30px;
+    }
+    .introd p {
+        width: 88%;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .list-unstyled {
+        font-size: 23px;
+    }
+    nav ul li {
+        font-size: 18px;
+        width: 100%;
+        height: 54px;
+        line-height: 33px;
+    }
+    .txt2_seg {
+        font-size: 20px;
+        margin-top: 19px;
+    }
+    .txt_seg {
+        font-size: 18px;
+    }
+    .seg_back {
+        height: 7rem;
+        margin-left: 47px;
+        /* margin-top: 16px; */
+    }
+    .que_bg {
+        width: 90%;
+        border-radius: 5px;
+        height: 31.7rem;
+        margin-left: 47px;
+        margin-top: 36px;
+    }
+    .video_size {
+        margin-top: 95px;
+    }
+    
+    .que {
+        font-size: 22px;
+        padding: 31px;
+    }
+    .opt_que {
+        font-size: 18px;
+        height: 67px;
+        margin-top: 9px;
+    }
+    .opt_que_input {
+        height: 6rem;
+        font-size: 18px;
+    }
+    .modal-dialog {
+        margin-top: 184px;
+        max-width: 763px;
+    }
+    .back {
+        width: 52px;
+        height: 52px;
+        margin-top: 17rem;
+      
+    }
+    .next{
+        width: 52px;
+        height: 52px;
+        margin-top: 17rem;
+    }
+    
+    footer {
+        height: 90px;
+    }
+    .ex {
+        font-size: 28px;
+    }
+    .check{
+        font-size: 28px;
+    }
+    .que2_op1_rht {
+        font-size: 28px; 
+    }
+    .cd-popup-container {
+        font-size: 22px;
+    }
+    #t1 {
+        height: 6rem;
+        font-size: 16px;
+        width: 44rem;
+    }
+    #t2 {
+        height: 6rem;
+        font-size: 16px;
+        width: 44rem;
+    }
+    #t3 {
+        height: 6rem;
+        font-size: 16px;
+        width: 44rem;
+    }
+    .input_size {
+        font-size: 16px;
+    }
+    .social-icons .fa {
+        font-size: 25px;
+    }
+}

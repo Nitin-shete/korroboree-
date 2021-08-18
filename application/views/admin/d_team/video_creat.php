@@ -97,7 +97,7 @@
                                 </div>
 
                                 <div class="mb-2">
-                                    <div id="container">
+                                    <div id="container"> 
 
                                   <label class="sr-only" for="">No of Segments</label>
                                   <input class="f1-email form-control" id="number" type="number" placeholder="Enter No of Segments"min="1" max="20" onkeydown="javascript: return event.keyCode == 69 ? false : true" placeholder="0" required tabindex="6">

@@ -1,0 +1,46 @@
+
+@media only screen and (min-device-width : 1701px) and (max-device-width : 1920px) {
+.color-small{
+    left: 44%;
+}
+
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    .animsition-loading {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        padding: 50px;
+        width:100% !important;
+        height: 100% !important;
+        background: url("../../assets/logo.png") center center no-repeat;
+        -webkit-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both
+    }
+    .top_read {
+        padding: 2px !important;
+        font-size: 9px !important;
+    }
+    .cd-logo img {
+        width: 117px !important;
+       
+    }
+    .cd-main-header {
+        height: 58px !important;
+    }
+    .cd-logo {
+        position: absolute;
+        top: 5px !important;
+        left: 5%;
+    }
+    .news-letter input {
+    width: 100%;
+    }
+    .cd-nav img{
+       display: none;
+    }
+  }
