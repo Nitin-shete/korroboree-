@@ -1,4 +1,4 @@
- <main class="cd-main-content">
+  <main class="cd-main-content">
             <!-- HOME SECTION
                ================================================== -->
             <section class="section parallax-section parallax-section-padding-top-bottom-home">
@@ -34,8 +34,8 @@
                   <div class="twelve columns">
                      <section id="why" class="tabcontent">
                         <div class="blog-big-wrapper grey-section">
-                           <h5>
-                              Why We Exist:
+                           <h5 class="heading">
+                              Why We Exist
                            </h5>
                            <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/teachers-page/why_we_exist/1.jpg" alt="">
                            <p>
@@ -54,7 +54,7 @@
                      </section>
                      <section id="how" class="tabcontent">
                         <div class="blog-big-wrapper grey-section">
-                           <h5>
+                           <h5 class="heading">
                               How We Will Make a Difference
                            </h5>
                            <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/teachers-page/how_we_will_make_a_difference/4.jpg" alt="">
@@ -79,7 +79,7 @@
                      </section>
                      <section id="what" class="tabcontent">
                         <div class="blog-big-wrapper grey-section">
-                           <h5>
+                           <h5 class="heading">
                      What We Offer
                            </h5>
                            <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/teachers-page/what_we_offer/2.jpg" alt="">
@@ -93,7 +93,7 @@
                      </section>
                      <section id="learn" class="tabcontent">
                         <div class="blog-big-wrapper grey-section">
-                           <h5>
+                           <h5 class="heading">
                               Digital Learning
                            </h5>
                            <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/digital-learning/coverPage/digital_learning_cover.jpg" alt="">
@@ -152,7 +152,7 @@
                      </section>
                      <section id="resource" class="tabcontent">
                         <div class="blog-big-wrapper grey-section">
-                           <h5>
+                           <h5  class="heading">
                               Resources
                            </h5>
                            <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/resources/cover.jpg" alt="">
@@ -171,9 +171,9 @@
                                           <div class="mask-2"></div>
                                        </div>
                                     </div>
-                                    <div class="one-third column illustration">
+                                    <div class="one-third column illustration  hovercom">
                                        <div class="portfolio-box-2 grey-section">
-                                         <a href="<?php echo base_url(); ?>teacher_video">
+                                         <a href="<?php echo base_url();?>teacher_video">
                                           <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/resources/video.png" alt="" />
                                           <h6>Videos</h6>
                                           </a>
@@ -222,7 +222,7 @@
                                     <div class="one-third column photography  hovercom">
                                        <div class="portfolio-box-2 grey-section">
                                           <p>Coming Soon..</p>
-                                          <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/resources/equipment.png" alt="" />
+                                          <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/resources/equipment.png" alt=""/>
                                           <h6>Equipment</h6>
                                           <div class="mask-2"></div>
                                        </div>

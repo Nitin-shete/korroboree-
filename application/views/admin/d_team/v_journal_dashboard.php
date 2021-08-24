@@ -48,10 +48,10 @@
                     <div class="col-sm-12">
 						<div class="card">
 						  <div class="card-header">
-							  <h5>List of Episodes Created by Korroboree Team</h5>
+							  <h5 style="text-transform:none";>List of episodes created by korroboree team</h5>
 							  <div class="card-header-right">
 								  <h6>
-									  <a href="<?php echo base_url(); ?>admin/video_create">Create New Episode</a>
+									  <a href="<?php echo base_url(); ?>admin/video_create">Create new episode</a>
 								  </h6>
 							  </div> 
 						  </div>

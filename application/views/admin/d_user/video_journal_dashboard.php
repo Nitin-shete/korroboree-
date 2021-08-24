@@ -1,20 +1,19 @@
 
-
-
          <!-- Page Header Ends                              -->
          <!-- Page Body Start-->
          <div class="page-body-wrapper">
             <!-- Page Sidebar Start-->
             <div class="sidebar-wrapper">
-               <div> 
+               <div>
                   <div class="logo-wrapper">
                      <a href="#">
-                        <img class="img-fluid for-light" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/logo/5thdt.png" alt="">
+                        <img class="img-fluid for-light" src="<?php echo base_url(); ?>assets/admin/d_user/assets/images/logo/5thdt.png" alt="">
                 </a>
                      <div class="back-btn"><i class="fa fa-angle-left"></i></div>
                      <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
                   </div>
-                  <div class="logo-icon-wrapper"><a href="#"><img class="img-fluid" src="<?php echo base_url(); ?>assets/admin/d_team/assets/images/logo/favicon_1.png" alt=""></a></div>
+                  <div class="logo-icon-wrapper"><a href="../dashboard.html"><img class="img-fluid" src="<?php echo base_url(); ?>assets/admin/d_user/assets/images/logo/favicon_1.png" alt=""></a></div>
+                  
                  <?php include("side_bar.php"); ?>
 
                </div>
@@ -47,7 +46,7 @@
                     <div class="col-sm-12">
             <div class="card">
               <div class="card-header">
-                <h5>List Of Episodes Created By 5THDT Team</h5>
+                <h5 style="text-transform:none;">List of episodes created by 5THDT team</h5>
                 <!-- <div class="card-header-right">
                   <h6>
                     <a href="<?php echo base_url(); ?>admin/video_create">Create New Episode</a>

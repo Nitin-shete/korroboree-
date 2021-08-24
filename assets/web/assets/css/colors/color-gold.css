@@ -83,6 +83,7 @@ a.arrow-down:hover{
 }
 .tooltip-inner-shop {
 	background:#ffcc2a;
+	color: black;
 }
 .shop-box .shop-price span{
 	color:#ffcc2a;
@@ -151,7 +152,7 @@ a.arrow-down:hover{
 	color: #ffcc2a;
 }
 .team-box-1 .team-box-1-text-in h6{
-	color: #ffcc2a;
+	color: gray;
 }
 .team-social li:hover.icon-team a {
 	color: #ffcc2a;

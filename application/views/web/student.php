@@ -34,8 +34,8 @@
                   <div class="twelve columns">
                      <section id="why" class="tabcontent">
                         <div class="blog-big-wrapper grey-section" >
-                           <h5>
-                              Why We Exist:
+                           <h5 class="heading">
+                              Why We Exist
                            </h5>
                            <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/students-page/why_we_exist/5.jpg" alt="">
                            <p>
@@ -48,7 +48,7 @@
                      </section>
                      <section id="how" class="tabcontent">
                         <div class="blog-big-wrapper grey-section" >
-                           <h5>
+                           <h5 class="heading">
                               How We Will Make a Difference
                            </h5>
                            <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/students-page/how_make_diff/2.jpg" alt="">
@@ -65,7 +65,7 @@
                      </section>
                      <section id="what" class="tabcontent">
                         <div class="blog-big-wrapper grey-section" >
-                           <h5>
+                           <h5 class="heading">
                               What We Offer
                            </h5>
                            <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/students-page/what_we_do/1.jpg" alt="">
@@ -76,7 +76,7 @@
                      </section>
                      <section id="learn" class="tabcontent">
                         <div class="blog-big-wrapper grey-section" >
-                           <h5>
+                           <h5 class="heading">
                               Digital Learning
                            </h5>
                            <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/digital-learning/coverPage/digital_learning_cover.jpg" alt="">
@@ -134,7 +134,7 @@
                      </section>
                      <section id="resource" class="tabcontent">
                         <div class="blog-big-wrapper grey-section" >
-                           <h5>
+                           <h5 class="heading">
                               Resources
                            </h5>
                            <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/resources/cover.jpg" alt="">
@@ -154,9 +154,9 @@
                                        </div>
                                        <div class="mask-2"></div>
                                     </div>
-                                    <div class="one-third column illustration">
+                                    <div class="one-third column illustration  hovercom">
                                        <div class="portfolio-box-2 grey-section">
-                                         <a href="<?php echo base_url(); ?>student_video">
+                                         <a href="<?php echo base_url();?>student_video">
                                           <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/resources/video.png" alt="" />
                                           <h6>Videos</h6>
                                           </a>

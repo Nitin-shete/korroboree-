@@ -35,9 +35,20 @@
    <!--Jquery-->
 
    <!--Floating WhatsApp css-->
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+
+
+
+   <!--Floating WhatsApp css-->
    <link rel="stylesheet"
       href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
-
+ 
+ 
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- JavaScript Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -48,6 +59,34 @@
    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
    <script src="<?php echo base_url(); ?>assets/web/assets/js/uikit.js"></script>
 
+
+   
+   <script>
+      $(document).ready(function(){
+         $("#myModal").modal('show');
+      });
+   </script>
+   <style>
+       .bs-example{
+          margin: 20px;
+       }
+      body.modal-open {
+     height: 100vh;
+     overflow-y: hidden;
+   }
+   .otp_width{
+   max-width: 330px !important;
+   margin-top: 220px !important;
+}
+.resend{
+   font-size: 10px;
+   margin-left: 100px;
+}
+.button, button, input[type="submit"], input[type="reset"], input[type="button"]{
+   background-color: transparent !important;
+   padding: 0px;
+}
+   </style>
 </head>
 
 <body>
@@ -58,8 +97,8 @@
             ================================================== -->
       <div class="header-top">
          <header class="cd-main-header">
-            <a class="cd-logo animsition-link" href="index.html">
-               <img src="<?php echo base_url(); ?>assets/web/assets/images/logos/logo.png" alt="Logo">
+            <a class="cd-logo animsition-link" href="<?php echo base_url(); ?>Home">
+               <img src="<?php echo base_url(); ?>assets/web/assets/images/new_logo.png" alt="Logo">
             </a>
             <ul class="cd-header-buttons">
                <!--<li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>-->
@@ -67,28 +106,28 @@
             </ul>
             <!-- cd-header-buttons -->
          </header>
-         <nav class="cd-nav">
+          <nav class="cd-nav">
             <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
                <li>
-                  <i> <img src="https://img.icons8.com/material-outlined/24/000000/home--v2.png" height="auto"
+                  <i class="pdng_left_8"> <img src="<?php echo base_url(); ?>assets/web/assets/images/icons/home_icon.png" height="auto"
                         width="17px" /></i>
-                  <a href="<?php echo base_url(); ?>Home" class="animsition-link">Home</a>
+                  <a href="<?php echo base_url();?>Home" class="animsition-link">Home</a>
                </li>
                <li>
-                  <i> <img src="https://img.icons8.com/ios/50/000000/adoption.png" height="auto" width="17px" /></i>
-                  <a href="<?php echo base_url(); ?>parent" class="animsition-link">Parent</a>
+                  <i class="pdng_left_8"> <img src="<?php echo base_url(); ?>assets/web/assets/images/icons/parent_icon.png" height="auto" width="17px" /></i>
+                  <a href="<?php echo base_url(); ?>parent"class="animsition-link">Parent</a>
                </li>
                <li>
-                  <i><img src="https://img.icons8.com/ios/30/000000/teacher.png" height="auto" width="17px" /></i>
-                  <a href="<?php echo base_url(); ?>teacher" class="animsition-link">Teacher</a>
+                  <i class="pdng_left_8"><img src="<?php echo base_url(); ?>assets/web/assets/images/icons/teacher_icon.png" height="auto" width="17px" /></i>
+                  <a href="<?php echo base_url();?>teacher" class="animsition-link">Teacher</a>
                </li>
                <li>
-                  <i> <img src="https://img.icons8.com/ios/50/000000/students.png" height="auto" width="17px" /></i>
-                  <a href="<?php echo base_url(); ?>student" class="animsition-link">Student</a>
+                  <i class="pdng_left_8"> <img src="<?php echo base_url(); ?>assets/web/assets/images/icons/students_icon.png" height="auto" width="17px" /></i>
+                  <a href="<?php echo base_url();?>student" class="animsition-link">Student</a>
                </li>
                <li>
-                  <i><img src="https://img.icons8.com/ios/50/000000/shopping-cart.png" height="auto" width="17px" /></i>
-                  <a href="<?php echo base_url(); ?>cart" class="">cart</a>
+                  <i class="pdng_left_8"><img src="<?php echo base_url(); ?>assets/web/assets/images/icons/cart_icon.png" height="auto" width="17px" /></i>
+                  <a href="<?php echo base_url(); ?>cart" class="">Cart</a>
                </li>
 
                <li>
@@ -105,15 +144,63 @@
             <div class="uk-width-1-2@m uk-padding-large uk-flex uk-flex-middle uk-flex-center" data-uk-height-viewport>
                <div class="uk-width-3-4@s">
                   <div class="uk-text-center uk-margin-bottom">
-                     <a class="uk-logo uk-text-success uk-text-bold" href="../index.html">
+                     <a class="uk-logo uk-text-success uk-text-bold" href="<?php echo base_url(); ?>Home">
                         <!-- <img src="images/khoro_logo.png" alt=""> -->
                      </a>
                   </div>
                   <div class="uk-text-center uk-margin-medium-bottom">
-                     <h1 class="uk-letter-spacing-small">Start Boarding Process</h1>
+                     <h1 class="uk-letter-spacing-small bord mbl_top">Start Boarding Process</h1>
                   </div>
 
 
+
+                  <form action="<?php echo base_url(); ?>user_data" method="post">
+                     <div class="login-box">
+                        <div class="user-box">
+                           <input type="text" name="username" required="">
+                           <label>Full Name<span class="required-mark">*</span>
+                           </label>
+                        </div>
+                        <div class="user-box">
+                           <input type="text" name="email" required="">
+                           <label>Email<span class="required-mark">*</span>
+                           </label>
+                        </div>
+                        <div class="user-box">
+                           <input type="" name="mnumber" required="">
+                           <label>Phone No<span class="required-mark">*</span>
+                           </label>
+                        </div>
+                        <div class="user-box">
+                           <input type="password" name="cpassword" required="">
+                           <label>Password<span class="required-mark">*</span>
+                           </label>
+                        </div>
+                        <div class="user-box">
+                           <input type="password" name="cpassword" required="">
+                           <label>Confirm Password<span class="required-mark">*</span>
+                           </label>
+                        </div>
+                      
+                        <div class="user-box">
+                           <input type="" name="rcode" required="">
+                           <label>Referral Code
+                           </label>
+                        </div>
+                        <div class="own_btn2  uk-width-1-1 uk-text-center" >
+                           <a class="cd-read-more"  data-toggle="modal" data-target="#exampleModal"
+                              style="color: black;padding: 15px 30px 15px 30px; font-size: 14px;font-weight: 700;">Submit</a>
+                        </div>
+
+                        <div class="uk-width-1-1 uk-margin uk-text-center">
+                           <p class="uk-text-small uk-margin-remove">By signing up you agree to our <a
+                                 class="uk-link-border" href="<?php echo base_url(); ?>privacy_policy">Privacy Policy</a></p>
+                        </div>
+
+
+                        <div class="uk-text-center uk-margin">
+                           <p class="uk-margin-remove">Or use your email for registration:</p>
+                        </div>    
                   <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex uk-flex-center uk-margin">
                      <div>
                         <a href="#" data-uk-icon="icon: facebook"
@@ -128,62 +215,14 @@
                            class="uk-icon-button uk-icon-button-large linkedin"></a>
                      </div>
                   </div>
-                  <div class="uk-text-center uk-margin">
-                     <p class="uk-margin-remove">Or use your email for registration:</p>
-                  </div>
-
-                  <form action="<?php echo base_url(); ?>user_data" method="post">
-                     <div class="login-box">
-                        <div class="user-box">
-                           <input type="text" name="username" required="">
-                           <label>Full Name<span class="required-mark">*</span>
-                           </label>
-                        </div>
-                        <div class="user-box">
-                           <input type="email" name="email" required="">
-                           <label>Email<span class="required-mark">*</span>
-                           </label>
-                        </div>
-                        <div class="user-box">
-                           <input type="text" name="mnumber" required="">
-                           <label>Phone No<span class="required-mark">*</span>
-                           </label>
-                        </div>
-                        <div class="user-box">
-                           <input type="password" name="cpassword" required="">
-                           <label>Password<span class="required-mark">*</span>
-                           </label>
-                        </div>
-                        <div class="user-box">
-                           <input type="password" name="cpassword" required="">
-                           <label>Confirm Password<span class="required-mark">*</span>
-                           </label>
-                        </div>
-                        <div class="user-box">
-                           <input type="text" name="address" required="">
-                           <label>Mailing Address<span class="required-mark">*</span>
-                           </label>
-                        </div>
-                        <div class="user-box">
-                           <input type="text" name="" required="">
-                           <label>Referral Code<span class="required-mark">*</span>
-                           </label>
-                        </div>
-                        <div class="own_btn2  uk-width-1-1 uk-text-center">
-                           <button  onclick="matchPassword()" class="cd-read-more" style="color: black;padding: 15px 30px 15px 30px; font-size: 14px; font-weight: 700;">Submit </button> 
-                        </div>
-
-                        <div class="uk-width-1-1 uk-margin uk-text-center">
-                           <p class="uk-text-small uk-margin-remove">By signing up you agree to our <a
-                                 class="uk-link-border" href="<?php echo base_url(); ?>privacy_policy">Privacy Policy</a></p>
-                        </div>
+                
                      </div>
                   </form>
                </div>
             </div>
             <div class="uk-width-1-2@m uk-padding-large uk-flex uk-flex-middle uk-flex-center uk-light
                   uk-background-cover uk-background-norepeat uk-background-blend-overlay uk-background-primary"
-               style="background-image: url(<?php echo base_url(); ?>assets/web/assets/pictures/website/signin_sign_up.jpg); opacity: 1; background-color: rgb(105, 104, 104);" data-uk-height-viewport>
+               style=" opacity: 1; background-color: #f1c40f;" data-uk-height-viewport>
                <div>
                   <div class="uk-text-center">
                      <h2 class="uk-h1 uk-letter-spacing-small" style="font-family:lato; opacity:1;">Welcome Back</h2>
@@ -192,98 +231,136 @@
                      <p style=" color: #fff !important; font-family: lato !important; font-size: 20px; opacity: 1;">Already signed up? Enter your details and start learning today
                      </p>
                   </div>
-                  <!-- <div class="uk-width-1-1 uk-text-center">
-                      <a href="sign-in.html" class="uk-button uk-button-success-outline uk-button-large"  style="font-family:lato;">Sign In</a>
-                    </div> -->
-                  <div class="own_btn  uk-width-1-1 uk-text-center">
+                 
+                  <div class="own_btn  uk-width-1-1 uk-text-center" >
                      <a href="<?php echo base_url(); ?>signin" class="cd-read-more"
-                        style="color:black;padding: 15px 30px 15px 30px; font-weight: 700; font-size: 14px;">Sign In</a>
+                        style="color:black;background-color: #fff; padding: 15px 30px 15px 30px; font-weight: 700; font-size: 14px;">Sign In</a>
                   </div>
                </div>
             </div>
          </div>
+
+
+
+      
          <!-- FOOTER
                ================================================== -->
-         <section class="section footer-1 section-padding-top-bottom">
-            <div class="container">
-               <div class="four columns" data-scroll-reveal="enter left move 200px over 0.5s after 0.8s">
-                  <a href="index.html" class="animsition-link">
-                     <div class="logo-footer"></div>
-                  </a>
-                  <div style="padding-top: 2rem;"></div>
-                  <div class="social-bottom">
-                     <ul class="list-social">
-                        <li class="icon-soc">
-                           <a href="https://www.facebook.com/Korroboree">&#xf09a;</a>
-                        </li>
-                        <li class="icon-soc">
-                           <a href="https://www.linkedin.com/company/korroboree/">&#xf0e1;</a>
-                        </li>
-                        <li class="icon-soc">
-                           <a href="https://www.instagram.com/korroboree/">&#xf16d;</a>
-                        </li>
-                        <li class="icon-soc">
-                           <a href="https://www.youtube.com/channel/UC48jMdM7Jm39hq9M7AF-owA">&#xf16a;</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="four columns" data-scroll-reveal="enter left move 200px over 0.5s after 0.3s">
-                  <h6>Information</h6>
-                  <p>
-                     <!-- <a href="#">About Us</a> <br/> <br/> -->
-                     <a href="contact.html">Contact Us</a> <br /> <br />
-                     <a href="terms_conditions.html">Terms &amp; Conditions</a> <br /> <br />
-                     <a href="privacy_policy.html">Privacy Policy</a>
-                  </p>
-               </div>
-               <div class="four columns" data-scroll-reveal="enter right move 200px over 0.5s after 0.3s">
-                  <h6>Contact Us</h6>
-                  <p>
-                     <a href="tel:+91 9820792077">+91 9820792077</a> <br />
-                     <a href="mailto:connect@korroboree.com">connect@korroboree.com</a>
-                  </p>
-               </div>
-               <div class="four columns" data-scroll-reveal="enter right move 200px over 0.5s after 0.8s">
-                  <h6>Subscribe to Our Newsletter</h6>
-                  <p>
-                     Get Regular Updates in your inbox
-                  </p>
-                  <div class="news-letter">
-                     <span class="wpcf7-form-control-wrap your-email">
-                        <input type="email" name="your-email" value="" size="40"
-                           class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                           aria-required="true" aria-invalid="false" placeholder="Your Email Address">
-                     </span>
-                  </div>
-                  <br /><br />
-                  <div class="own_btn" style="margin-top: 15px;">
-                     <a href="#" class="cd-read-more">Submit</a>
-                  </div>
-               </div>
+       <section class="section footer-1 section-padding-top-bottom">
+      <div class="container">
+         <div class="four columns" data-scroll-reveal="enter left move 200px over 0.5s after 0.8s">
+            <a href="<?php echo base_url(); ?>Home" class="animsition-link">
+               <div class="logo-footer"></div>
+            </a>
+            <div style="padding-top: 2rem;"></div>
+            <div class="social-bottom">
+               <ul class="list-social">
+                  <li class="icon-soc">
+                     <a href="https://www.facebook.com/Korroboree" target="_blank">&#xf09a;</a>
+                  </li>
+                  <li class="icon-soc">
+                     <a href="https://www.linkedin.com/company/korroboree/" target="_blank">&#xf0e1;</a>
+                  </li>
+                  <li class="icon-soc">
+                     <a href="https://www.instagram.com/korroboree/" target="_blank">&#xf16d;</a>
+                  </li>
+                  <li class="icon-soc">
+                     <a href="https://www.youtube.com/channel/UC48jMdM7Jm39hq9M7AF-owA" target="_blank">&#xf16a;</a>
+                  </li>
+               </ul>
             </div>
-         </section>
-         <section class="section footer-bottom">
-            <div class="container">
-               <div class="sixteen columns">
-                  <p>© ALL RIGHTS RESERVED. MADE BY 5TH Dimension Technologies <span id="year"></span></p>
-               </div>
+         </div>
+         <div class="four columns" data-scroll-reveal="enter left move 200px over 0.5s after 0.3s">
+            <h6>Information</h6>
+            <p>
+               <!-- <a href="#">About Us</a> <br/> <br/> -->
+               <a href="<?php echo base_url(); ?>contact">Contact Us</a> <br /> <br />
+               <a href="<?php echo base_url(); ?>terms_conditions">Terms of Service </a> <br /> <br />
+               <a href="<?php echo base_url(); ?>privacy_policy">Privacy Policy</a>
+            </p>
+         </div>
+         <div class="four columns" data-scroll-reveal="enter right move 200px over 0.5s after 0.3s">
+            <h6>Contact Us</h6>
+            <p>
+               <a href="tel:+91 9820792077">+91 7045457777</a> <br />
+               <a href="mailto:connect@korroboree.com">connect@korroboree.com</a>
+            </p>
+         </div>
+         <div class="four columns" data-scroll-reveal="enter right move 200px over 0.5s after 0.8s">
+            <h6>Subscribe to Our Newsletter</h6>
+            <p>
+               Get Regular Updates in your inbox
+            </p>
+            <div class="news-letter">
+               <span class="wpcf7-form-control-wrap your-email">
+                  <input type="email" name="your-email" value="" size="40"
+                     class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                     aria-required="true" aria-invalid="false" placeholder="Your Email Address">
+               </span>
             </div>
-         </section>
-      </main>
+            <br><br>
+            <div class="own_btn" style="margin-top: 15px; margin-bottom: 20px;">
+               <a href="#" class="cd-read-more">Submit</a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="section footer-bottom">
+      <div class="container">
+         <div class="sixteen columns">
+            <a href="http://5thdt.com/" target="_blank"><p>© ALL RIGHTS RESERVED. MADE BY 5TH Dimension Technologies <span id="year"></span></p></a>
+         </div>
+      </div>
+   </section>
+   </main>
+          <!-- Modal -->
+ <!-- Modal -->
+ 
+
+<div class="modal fade " id="exampleModal" tabindex="-1" style="z-index: 9999;" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog otp_width" >
+     <div class="modal-content" align="center">
+      <div class="row" style="padding-top: 30px;">
+         <div class="col">
+            Enter OTP <br>
+            OTP has been sent to your email
+         </div>
+      </div>
+      <div class="row">
+         <div class="col">
+            <input type="text" name="" id=""> <br>
+            <span class="resend" align="right"></span>
+         </div>
+      </div>
+      <div class="row" style="padding-bottom: 30px;">
+         <div class="col">
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float:none;text-shadow:none">
+               <div class="own_btn" >
+                  <a href="#" class="cd-read-more" style="color: black;">Verify OTP</a>
+               </div>
+              </button>
+         </div>
+      </div>
+   
+     </div>
+   </div>
+  </div>
+
+
+   <!-- Modal -->
 
       <div id="WAButton"></div>
       <div class="scroll-to-top">&#xf106;</div>
    </div>
    <!-- JAVASCRIPT
          ================================================== -->
-   <script type="text/javascript" src="<?php echo base_url(); ?>assets/web/assets/js/jquery-2.1.1.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-   <!--Floating WhatsApp javascript-->
-   <script type="text/javascript"
-      src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
-
+         <script type="text/javascript" src="<?php echo base_url(); ?>assets/web/assets/js/jquery-2.1.1.js"></script>
+         <!--Jquery-->
+         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+         <!--Floating WhatsApp javascript-->
+         <script type="text/javascript"
+            src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+         
 
    <script type="text/javascript" src="<?php echo base_url(); ?>assets/web/assets/js/modernizr.custom.js"></script>
    <script type="text/javascript" src="<?php echo base_url(); ?>assets/web/assets/js/jquery.mobile.custom.min.js"></script>
@@ -332,6 +409,10 @@
    <script type="text/javascript" src="<?php echo base_url(); ?>assets/web/assets/js/jquery.counterup.min.js"></script>
    <script type="text/javascript" src="<?php echo base_url(); ?>assets/web/assets/js/waypoints.min.js"></script>
    <script type="text/javascript" src="<?php echo base_url(); ?>assets/web/assets/js/scrollReveal.js"></script>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
    <script type="text/javascript">
       (function ($) {
          "use strict";
@@ -370,7 +451,7 @@
    <script type="text/javascript">
       $(function () {
          $('#WAButton').floatingWhatsApp({
-            phone: '1231231231', //WhatsApp Business phone number International format-
+            phone: '+91 7045457777',//WhatsApp Business phone number International format-
             //Get it with Toky at https://toky.co/en/features/whatsapp.
             headerTitle: 'Chat with us on WhatsApp!', //Popup Title
             popupMessage: 'Hello, how can we help you?', //Popup Message

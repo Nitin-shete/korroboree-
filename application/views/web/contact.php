@@ -37,7 +37,7 @@
 	<!-- SECTION
     ================================================== -->	
 	
-		<section class="section white-section section-padding-top-bottom">
+		<section class="section white-section section-padding-top-bottom pading_top_contct">
 		
 			<div class="container">
 				<div class="sixteen columns">
@@ -90,60 +90,62 @@
 	<!-- SECTION
     ================================================== -->	
 	
-		<section class="section">
+	<!-- 	<section class="section">
 		
 			<a class="button-map close-map"><span>Locate Us on Map</span></a>
 			<div id="google_map"></div>	
 				
-		</section>	
+		</section> -->	
 			
 
 	<!-- SECTION
     ================================================== -->	
 	
-	<section class="section white-section section-padding-top-bottom">
+	<section class="section white-section section-padding-top-bottom ">
 		<div class="container">
 		   <div class="sixteen columns">
 			  <div class="social-contact">
 				 <ul class="list-contact">
 					<li class="contact-soc">
-					   <a class="tooltip-shop" href="#">&#xf09a; 
+					   <a class="tooltip-shop" target="_blank" href="https://www.facebook.com/Korroboree">&#xf09a; 
 						   <span class="tooltip-content-shop">
 							   <span class="tooltip-text-shop">
-								   <span class="tooltip-inner-shop">follow me</span>
+								   <span class="tooltip-inner-shop">Facebook</span>
 							   </span>
 						   </span>
 					   </a>
 					</li>
 					<li class="contact-soc">
-					   <a class="tooltip-shop" href="#">&#xf099;
+					   <a class="tooltip-shop" target="_blank" href="https://www.linkedin.com/company/korroboree/">&#xf0e1;
 						   <span class="tooltip-content-shop">
 							   <span class="tooltip-text-shop">
-								   <span class="tooltip-inner-shop">like me</span>
+								   <span class="tooltip-inner-shop">linkedin</span>
 							   </span>
 						   </span>
 						</a>
 					</li>
 					<li class="contact-soc">
-					   <a class="tooltip-shop" href="#">&#xf16d; 
+					   <a class="tooltip-shop" target="_blank" href="https://www.instagram.com/korroboree/">&#xf16d; 
 						   <span class="tooltip-content-shop">
 							   <span class="tooltip-text-shop">
-								   <span class="tooltip-inner-shop">stay up to date</span>
+								   <span class="tooltip-inner-shop">Instagram</span>
 							   </span>
 						   </span>
 					   </a>
 					</li>
 					<li class="contact-soc">
-					   <a class="tooltip-shop" href="#">&#xf16a;
+					   <a class="tooltip-shop"  target="_blank" href="https://www.youtube.com/channel/UC48jMdM7Jm39hq9M7AF-owA">&#xf16a;
 						   <span class="tooltip-content-shop">
 							   <span class="tooltip-text-shop">
-								   <span class="tooltip-inner-shop">+1 me</span>
+								   <span class="tooltip-inner-shop">YouTube</span>
 							   </span>
 						   </span>
 					   </a>
 					</li>
+				
 				 </ul>
 			  </div>
 		   </div>
 		</div>
 	 </section> 
+	

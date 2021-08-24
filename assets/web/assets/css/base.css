@@ -78,7 +78,8 @@ h1, h2, h3, h4, h5, h6 {
 	h3 { font-size: 28px; line-height: 32px;text-transform: uppercase;font-weight: 400;}
 	h4 { font-size: 24px; line-height: 28px;text-transform: uppercase;font-weight: 700;}
 	h5 { font-size: 20px; line-height: 26px;text-transform: uppercase;font-weight: 700;}
-	h6 { font-size: 16px; line-height: 20px;text-transform: uppercase;font-weight: 700;}
+	h6 { font-size: 16px; line-height: 20px;text-transform: normal;font-weight: 700;}
+	.headeing { font-size: 20px !important; line-height: 20px;text-transform: normal;font-weight: 700;}
 
 
 	p {  }
@@ -134,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"] {
-	background:#f5f7fb;	
+	background:#363636;	
 	margin-top:10px;
 	border:none;
 	  color: #dfdfdf;

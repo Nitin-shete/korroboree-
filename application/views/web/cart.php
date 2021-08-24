@@ -77,44 +77,47 @@
     <!-- MENU
             ================================================== -->
     <div class="header-top">
-      <header class="cd-main-header">
-        <a class="cd-logo animsition-link" href="index.html">
-          <img src="<?php echo base_url(); ?>assets/web/assets//images/logos/logo.png" alt="Logo">
-        </a>
-        <ul class="cd-header-buttons">
-          <!--<li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>-->
-          <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
-        </ul>
-        <!-- cd-header-buttons -->
-      </header>
+         <header class="cd-main-header">
+            <a class="cd-logo animsition-link" href="<?php echo base_url();?>Home">
+               <img src="<?php echo base_url(); ?>assets/web/assets/images/new_logo.png" alt="Logo">
+            </a>
+            <ul class="cd-header-buttons">
+               <!--<li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>-->
+               <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
+            </ul>
+            <!-- cd-header-buttons -->
+         </header>
+      
       <nav class="cd-nav">
-        <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-          <li>
-            <i> <img src="https://img.icons8.com/material-outlined/24/000000/home--v2.png" height="auto" width="17px" /></i>
-             <a href="index.html" class="animsition-link">Home</a>
-          </li>
-          <li>
-            <i> <img src="https://img.icons8.com/ios/50/000000/adoption.png" height="auto" width="17px" /></i>
-             <a href="parent.html" class="animsition-link">Parent</a>
-          </li>
-          <li>
-             <i><img src="https://img.icons8.com/ios/30/000000/teacher.png"  height="auto" width="17px" /></i>
-             <a href="teacher.html" class="animsition-link">Teacher</a>
-          </li>
-          <li>
-             <i> <img src="https://img.icons8.com/ios/50/000000/students.png"  height="auto" width="17px"/></i>
-             <a href="student.html" class="animsition-link">Student</a>
-          </li>
-          <li>
-             <i><img src="https://img.icons8.com/ios/50/000000/shopping-cart.png"  height="auto" width="17px"/></i>
-             <a href="cart.html" class="">cart</a>
-          </li>
-            
-           <li>
-             <a href="sign_up.html" class="">Login</a>
-          </li>
-        </ul>
-      </nav>
+            <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+               <li>
+                  <i class="pdng_left_8"> <img src="<?php echo base_url(); ?>assets/web/assets/images/icons/home_icon.png" height="auto"
+                        width="17px" /></i>
+                  <a href="<?php echo base_url();?>Home" class="animsition-link">Home</a>
+               </li>
+               <li>
+                  <i class="pdng_left_8"> <img src="<?php echo base_url(); ?>assets/web/assets/images/icons/parent_icon.png" height="auto" width="17px" /></i>
+                  <a href="<?php echo base_url(); ?>parent"class="animsition-link">Parent</a>
+               </li>
+               <li>
+                  <i class="pdng_left_8"><img src="<?php echo base_url(); ?>assets/web/assets/images/icons/teacher_icon.png" height="auto" width="17px" /></i>
+                  <a href="<?php echo base_url();?>teacher" class="animsition-link">Teacher</a>
+               </li>
+               <li>
+                  <i class="pdng_left_8"> <img src="<?php echo base_url(); ?>assets/web/assets/images/icons/students_icon.png" height="auto" width="17px" /></i>
+                  <a href="<?php echo base_url();?>student" class="animsition-link">Student</a>
+               </li>
+               <li>
+                  <i class="pdng_left_8"><img src="<?php echo base_url(); ?>assets/web/assets/images/icons/cart_icon.png" height="auto" width="17px" /></i>
+                  <a href="<?php echo base_url(); ?>cart" class="">Cart</a>
+               </li>
+
+               <li>
+                  <a href="<?php echo base_url(); ?>signin" class="">Login</a>
+               </li>
+            </ul>
+         </nav>
+
       <!-- cd-nav -->
       <div id="cd-search" class="cd-search">
         <form>

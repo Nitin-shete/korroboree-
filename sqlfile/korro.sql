@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 01, 2021 at 12:37 PM
+-- Generation Time: Aug 24, 2021 at 11:10 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.2.32
 
@@ -681,17 +681,22 @@ CREATE TABLE `topic_info` (
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `user_name` varchar(150) NOT NULL,
-  `password` varchar(150) NOT NULL
+  `fullname` varchar(250) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `password` varchar(150) NOT NULL,
+  `cpassword` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `referral_code` varchar(50) NOT NULL,
+  `c_date` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `user_name`, `password`) VALUES
-(1, 'priya', '1234'),
-(2, 'Rakesh', '1234');
+INSERT INTO `users` (`id`, `fullname`, `email`, `phone`, `password`, `cpassword`, `address`, `referral_code`, `c_date`) VALUES
+(1, 'Nitin shete', 'Nitin@123.com', '9673746***', 'nitin@1', 'nitin@1', 'vaijapur', '012', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -725,19 +730,6 @@ CREATE TABLE `video_episode` (
   `episode` varchar(333) DEFAULT NULL,
   `story_board` varchar(333) DEFAULT NULL,
   `episode_number` varchar(333) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `video_episode_1`
---
-
-CREATE TABLE `video_episode_1` (
-  `id` int(11) NOT NULL,
-  `episode` varchar(150) NOT NULL,
-  `story_board` varchar(255) NOT NULL,
-  `episode_number` int(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -789,7 +781,175 @@ CREATE TABLE `video_journal_create` (
 --
 
 INSERT INTO `video_journal_create` (`id`, `interviewee_name`, `interviewee_image`, `segment_no`, `segment_titles`, `c_date`, `storyboard_file`, `status`) VALUES
-(26, 'Rick Hanson', '202106301222097902672_untitled.png', '7', 'first segment,second segment,third segment,four segment', '30/06/2021', '202106301222085443571_bond_hostel.pdf', '');
+(55, 'Rick Hanson', '202107220622361283548_rhanson.jpg', '5', 'segment one ,segment two,segment 3,segment 4,segment 5', '22/07/2021', 'CET_sagar_jagtap.pdf,Website_flow.pdf', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `video_segment_1`
+--
+
+CREATE TABLE `video_segment_1` (
+  `id` int(11) NOT NULL,
+  `video_journal_id` int(11) NOT NULL,
+  `page_title` varchar(200) NOT NULL,
+  `s_video` varchar(255) NOT NULL,
+  `c_date` text NOT NULL,
+  `custom_input` text NOT NULL,
+  `clues` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `video_segment_1`
+--
+
+INSERT INTO `video_segment_1` (`id`, `video_journal_id`, `page_title`, `s_video`, `c_date`, `custom_input`, `clues`) VALUES
+(2, 55, 'segment 3', '202108101822028922306_10_seconds_animation.mp4', '10/08/2021', 'yes', 'NA'),
+(3, 55, 'segment 4', '202108110809474328696_10_seconds_animation.mp4', '11/08/2021', 'yes', 'NA'),
+(4, 55, 'segment 5', '202108111754022321123_10_seconds_animation.mp4', '11/08/2021', 'no', 'NA');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `video_segment_2`
+--
+
+CREATE TABLE `video_segment_2` (
+  `id` int(11) NOT NULL,
+  `v_segment_id` int(11) NOT NULL,
+  `no_question` int(255) NOT NULL,
+  `question` text NOT NULL,
+  `question_type` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `video_segment_2`
+--
+
+INSERT INTO `video_segment_2` (`id`, `v_segment_id`, `no_question`, `question`, `question_type`) VALUES
+(1, 1, 2, 'what is db', 'mcq'),
+(2, 1, 0, 'what is NQT', 'mcq'),
+(3, 2, 2, 'what is php', 'single_choice'),
+(4, 2, 0, 'what is db', 'mcq'),
+(5, 3, 2, 'what is API', 'mcq'),
+(6, 3, 0, 'What is PDF', 'mcq'),
+(7, 4, 1, 'what is db', 'mcq');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `video_segment_3`
+--
+
+CREATE TABLE `video_segment_3` (
+  `id` int(11) NOT NULL,
+  `question_id` int(11) NOT NULL,
+  `no_option` varchar(255) NOT NULL,
+  `option_title` varchar(255) NOT NULL,
+  `ans_type` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `video_segment_3`
+--
+
+INSERT INTO `video_segment_3` (`id`, `question_id`, `no_option`, `option_title`, `ans_type`) VALUES
+(1, 2, '', '', 'Select Answer Type'),
+(2, 2, '', '', 'Select Answer Type'),
+(3, 2, '', '', 'Select Answer Type'),
+(4, 2, '', '', 'Select Answer Type'),
+(5, 4, '', 'screpting', 'yes'),
+(6, 4, '', 'programming', 'no'),
+(7, 4, '', 'database', 'yes'),
+(8, 4, '', 'table', 'no'),
+(9, 6, '', '', 'Select Answer Type'),
+(10, 6, '', '', 'Select Answer Type'),
+(11, 6, '', '', 'Select Answer Type'),
+(12, 6, '', '', 'Select Answer Type'),
+(13, 7, '', 'opation 1', 'yes'),
+(14, 7, '', 'option 2', 'no'),
+(15, 7, '', 'optoon 3', 'no');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `web_intro_slider`
+--
+
+CREATE TABLE `web_intro_slider` (
+  `id` int(11) NOT NULL,
+  `slider_name` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `c_date` date NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `web_intro_slider`
+--
+
+INSERT INTO `web_intro_slider` (`id`, `slider_name`, `title`, `c_date`) VALUES
+(1, 'home_page_ctvboy.jpg', 'CREATING THE BEST VERSION OF MYSELF', '2021-08-20');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `web_main_slider`
+--
+
+CREATE TABLE `web_main_slider` (
+  `id` int(11) NOT NULL,
+  `slider_page_name` varchar(200) NOT NULL,
+  `slider_name` varchar(200) NOT NULL,
+  `slider_text` varchar(200) NOT NULL,
+  `c_date` date NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `web_main_slider`
+--
+
+INSERT INTO `web_main_slider` (`id`, `slider_page_name`, `slider_name`, `slider_text`, `c_date`) VALUES
+(2, 'parent', 'home_page -parent.jpg', 'Parent', '2021-08-20'),
+(3, 'teacher', 'homepage teacher.jpg', 'Teacher ', '2021-08-20'),
+(4, 'student', 'homepage - student.jpg', 'Student', '2021-08-20');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `web_sub_slider`
+--
+
+CREATE TABLE `web_sub_slider` (
+  `id` int(11) NOT NULL,
+  `main_slider_id` int(11) NOT NULL,
+  `slider_page_name` varchar(200) NOT NULL,
+  `slider_name` varchar(200) NOT NULL,
+  `slider_text` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `web_sub_slider`
+--
+
+INSERT INTO `web_sub_slider` (`id`, `main_slider_id`, `slider_page_name`, `slider_name`, `slider_text`) VALUES
+(1, 1, 'Why We Exist', 'why.png', ''),
+(2, 1, 'How We Began', 'how.png', ''),
+(3, 1, 'What We Offer', 'what.png', ''),
+(4, 2, 'Why We Exist', 'why.png', ''),
+(5, 2, 'HOW WE WILL MAKEA DIFFERENCE', 'How we make a difference coverjpg.jpg', ''),
+(6, 2, 'What We Offer', 'offer.jpg', ''),
+(7, 2, 'Digital learning', 'digital_learning_cover.jpg', ''),
+(8, 2, 'Resources', 'cover.jpg', ''),
+(9, 3, 'Why We Exist', '1.jpg', ''),
+(10, 3, 'HOW WE WILL MAKEA DIFFERENCE', '4.jpg', ''),
+(11, 3, 'What We Offer', '2.jpg', ''),
+(12, 3, 'Digital learning', 'digital_learning_cover.jpg', ''),
+(13, 3, 'Resources', 'cover.jpg', ''),
+(14, 4, 'Why We Exist', '5.jpg', ''),
+(15, 4, 'HOW WE WILL MAKEA DIFFERENCE', '2.jpg', ''),
+(16, 4, 'What We Offer', '1.jpg', ''),
+(17, 4, 'Digital learning', 'digital_learning_cover.jpg', ''),
+(18, 4, 'Resources', 'cover.jpg', '');
 
 --
 -- Indexes for dumped tables
@@ -869,9 +1029,51 @@ ALTER TABLE `topics_data_list_2`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `video_journal_create`
 --
 ALTER TABLE `video_journal_create`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `video_segment_1`
+--
+ALTER TABLE `video_segment_1`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `video_segment_2`
+--
+ALTER TABLE `video_segment_2`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `video_segment_3`
+--
+ALTER TABLE `video_segment_3`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `web_intro_slider`
+--
+ALTER TABLE `web_intro_slider`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `web_main_slider`
+--
+ALTER TABLE `web_main_slider`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `web_sub_slider`
+--
+ALTER TABLE `web_sub_slider`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -921,10 +1123,52 @@ ALTER TABLE `topics_data_list_2`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `video_journal_create`
 --
 ALTER TABLE `video_journal_create`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+
+--
+-- AUTO_INCREMENT for table `video_segment_1`
+--
+ALTER TABLE `video_segment_1`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `video_segment_2`
+--
+ALTER TABLE `video_segment_2`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `video_segment_3`
+--
+ALTER TABLE `video_segment_3`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `web_intro_slider`
+--
+ALTER TABLE `web_intro_slider`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `web_main_slider`
+--
+ALTER TABLE `web_main_slider`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `web_sub_slider`
+--
+ALTER TABLE `web_sub_slider`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

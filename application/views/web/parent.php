@@ -25,7 +25,7 @@
                   <div class="post-sidebar">
                      <div>
                         <h6><span><img src="https://img.icons8.com/ios/50/000000/adoption.png" height=auto; width=40px
-                                 style="padding: 4px; vertical-align: middle;" /></span>Parents</h6>
+                                 style="padding: 4px; vertical-align: middle;" /></span>Parent</h6>
                      </div>
                      <ul class="link-recents shortcodes-carousel">
                         <li class="tab tablinks" onclick="show(event, 'why')" id="defaultOpen"><a>Why We Exist</a></li>
@@ -40,8 +40,8 @@
                <div class="twelve columns">
                   <section id="why" class="tabcontent">
                      <div class="blog-big-wrapper grey-section">
-                        <h5>
-                           Why We Exist:
+                        <h5 class="heading">
+                           Why We Exist
                         </h5>
                         <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/parents-page/why/why.jpg" alt="" />
                         <p>
@@ -61,35 +61,11 @@
                            creating a sustainable, peaceful, and abundant world.
                         </p>
 
-                        <!-- <div class="container">
-                              <div class="thirteen columns">
-                                 <div id="owl-portfolio-slider" class="blockquotes-box-1 grey-section blockquotes-float-content owl-carousel owl-theme">
-                                    <div class="item">
-                                       <img class="blog-big-wrapper grey-section" src="<?php echo base_url(); ?>assets/web/assets/images/portfolio/1.jpg" alt="" />
-                                       <div class="left-info">Caption One</div>
-                                    </div>
-                                    <div class="item">
-                                       <img class="blog-big-wrapper grey-section" src="<?php echo base_url(); ?>assets/web/assets/images/portfolio/1.jpg" alt="" />
-                                       <div class="left-info">Caption Two</div>
-                                    </div>
-                                    <div class="item">
-                                       <img class="blog-big-wrapper grey-section" src="<?php echo base_url(); ?>assets/web/assets/images/portfolio/1.jpg" alt="" />
-                                       <div class="left-info">Caption Three</div>
-                                    </div>
-                                    <div class="item">
-                                       <img class="blog-big-wrapper grey-section" src="<?php echo base_url(); ?>assets/web/assets/images/portfolio/1.jpg" alt="" />
-                                       <div class="left-info">Caption Four</div>
-                                    </div>
-                                 </div>
-                                
-                                 
-                              </div>
-                           </div> -->
                      </div>
                   </section>
                   <section id="how" class="tabcontent">
                      <div class="blog-big-wrapper grey-section">
-                        <h5>
+                        <h5 class="heading">
                            How We Will Make a Difference
                         </h5>
                         <img
@@ -113,30 +89,7 @@
                            stress and failure, etc., which should reflect in our day to day life so that our children
                            can learn from us and mirror those same qualities in their life.
                         </p>
-                        <!-- <div class="container">
-                              <div class="thirteen columns">
-                                 <div id="slider-1" class="blockquotes-box-1 grey-section blockquotes-float-content owl-carousel owl-theme">
-                                    <div class="item">
-                                       <img class="blog-big-wrapper grey-section" src="<?php echo base_url(); ?>assets/web/assets/images/portfolio/1.jpg" alt="" />
-                                       <div class="left-info">Caption One</div>
-                                    </div>
-                                    <div class="item">
-                                       <img class="blog-big-wrapper grey-section" src="<?php echo base_url(); ?>assets/web/assets/images/portfolio/1.jpg" alt="" />
-                                       <div class="left-info">Caption Two</div>
-                                    </div>
-                                    <div class="item">
-                                       <img class="blog-big-wrapper grey-section" src="<?php echo base_url(); ?>assets/web/assets/images/portfolio/1.jpg" alt="" />
-                                       <div class="left-info">Caption Three</div>
-                                    </div>
-                                    <div class="item">
-                                       <img class="blog-big-wrapper grey-section" src="<?php echo base_url(); ?>assets/web/assets/images/portfolio/1.jpg" alt="" />
-                                       <div class="left-info">Caption Four</div>
-                                    </div>
-                                 </div>
-                                
-                                 
-                              </div>
-                           </div> -->
+                       
                         <h6>
                            Inform and Guide
                         </h6>
@@ -158,7 +111,7 @@
                   </section>
                   <section id="what" class="tabcontent">
                      <div class="blog-big-wrapper grey-section">
-                        <h5>
+                        <h5 class="heading">
                            What We Offer
                         </h5>
                         <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/parents-page/what_we_offer/offer.jpg" alt="">
@@ -172,12 +125,12 @@
                   </section>
                   <section id="learn" class="tabcontent">
                      <div class="blog-big-wrapper grey-section">
-                        <h5>
+                        <h5 class="heading">
                            Digital Learning
                         </h5>
                         <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/digital-learning/coverPage/digital_learning_cover.jpg" alt="">
                         <section class="section grey-section">
-                           <div class="container">
+                        <div class="container">
                               <h6 style="padding: 20px;">
                                  Self-paced Courses
                               </h6>
@@ -186,7 +139,7 @@
                                  <div class="team-box-1 full-image-box">
                                     <p>Coming Soon..</p>
                                     <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/digital-learning/moonshot/moonshot.png" alt="">
-                                    <div class="team-box-1-text-in white-section">
+                                    <div class="team-box-1-text-in white-section headeing ">
                                        <h6>Moonshot Conversations</h6>
                                     </div>
                                     <div class="mask-2"></div>
@@ -197,13 +150,19 @@
                                     <div class="team-box-1 full-image-box">
                                        <p>Coming Soon..</p>
                                        <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/digital-learning/webinars/webinars.jpg" alt="">
-                                       <div class="team-box-1-text-in white-section">
+                                       <div class="team-box-1-text-in white-section headeing ">
                                           <h6>Webinars</h6>
                                        </div>
                                        <div class="mask-2"></div>
                                     </div>
                                  </div>
                               </div>
+
+
+                          
+
+
+
                         </section>
                         <section class="section">
                            <div class="container">
@@ -216,7 +175,7 @@
                                  <div class="team-box-1 full-image-box">
                                     <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/digital-learning/live-events/upcoming_live_event.jpg"
                                        alt="">
-                                    <div class="team-box-1-text-in white-section">
+                                    <div class="team-box-1-text-in white-section headeing ">
                                        <h6>Upcoming Live Events</h6>
                                     </div>
                                     <div class="mask-2"></div>
@@ -227,7 +186,7 @@
                                  <p>Coming Soon..</p>
                                  <div class="team-box-1 full-image-box">
                                     <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/digital-learning/rick/rick_img.jpg" alt="">
-                                    <div class="team-box-1-text-in white-section">
+                                    <div class="team-box-1-text-in white-section headeing ">
                                        <h6>Interview Journals</h6>
                                     </div>
                                     <div class="mask-2"></div>
@@ -239,7 +198,7 @@
                   </section>
                   <section id="resource" class="tabcontent">
                      <div class="blog-big-wrapper grey-section">
-                        <h5>
+                        <h5 class="heading">
                            Resources
                         </h5>
                         <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/resources/cover.jpg" alt="">
@@ -251,15 +210,15 @@
                               <div id="projects-grid-2">
                                  <div class="one-third column photography  hovercom">
                                     <p>Coming Soon..</p>
-                                    <div class="portfolio-box-2 grey-section">
+                                    <div class="portfolio-box-2 grey-section headeing ">
                                        <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/resources/korroboree_journals.png" alt="" />
                                        <h6>Journals</h6>
                                     </div>
                                     <div class="mask-2"></div>
                                  </div>
-                                 <div class="one-third column illustration ">
-                                    <div class="portfolio-box-2 grey-section">
-                                       <a href="<?php echo base_url(); ?>parent_video">
+                                 <div class="one-third column illustration  hovercom">
+                                    <div class="portfolio-box-2 grey-section headeing ">
+                                       <a href="<?php echo base_url(); ?>parent_video ">
                                           <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/resources/video.png" alt="" />
                                           <h6>Videos</h6>
                                        </a>
@@ -283,7 +242,7 @@
                                  </div>
                                  <div class="one-third column illustration  hovercom">
                                     <p>Coming Soon..</p>
-                                    <div class="portfolio-box-2 grey-section">
+                                    <div class="portfolio-box-2 grey-section headeing ">
                                        
                                        <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/resources/moonshot.png" alt="" />
                                        <h6>Moonshot Conversations</h6>
@@ -302,7 +261,7 @@
                               <div id="projects-grid-4">
                                  <div class="one-third column photography  hovercom">
                                     <p>Coming Soon..</p>
-                                    <div class="portfolio-box-2 grey-section">
+                                    <div class="portfolio-box-2 grey-section headeing ">
                                        <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/resources/book.png" alt="" />
                                        <h6>Books</h6>
                                     </div>
@@ -310,7 +269,7 @@
                                  </div>
                                  <div class="one-third column photography  hovercom">
                                     <p>Coming Soon..</p>
-                                    <div class="portfolio-box-2 grey-section">
+                                    <div class="portfolio-box-2 grey-section headeing " >
                                       
                                        <img src="<?php echo base_url(); ?>assets/web/assets/pictures/website/resources/equipment.png" alt="" />
                                        <h6>Equipment</h6>

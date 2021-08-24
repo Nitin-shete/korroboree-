@@ -26,6 +26,7 @@
    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/web/assets/css/retina.css" />
    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/web/assets/css/animsition.min.css" />
    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/web/assets/css/login.css" />
+   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/web/assets/css/responsive.css" />
    <link rel="alternate stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/web/assets/css/colors/color-gold.css" title="1">
    <link rel="alternate stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/web/assets/css/colors/color-2.css" title="2">
    <link rel="alternate stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/web/assets/css/colors/color-3.css" title="3">
@@ -37,8 +38,20 @@
          ================================================== -->
 
    <!--Floating WhatsApp css-->
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+
+
+
+   <!--Floating WhatsApp css-->
    <link rel="stylesheet"
       href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+
+
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- JavaScript Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -65,7 +78,7 @@
       <div class="header-top">
          <header class="cd-main-header">
             <a class="cd-logo animsition-link" href="index.html">
-               <img src="<?php echo base_url(); ?>assets/web/assets/images/logos/logo.png" alt="Logo">
+               <img src="<?php echo base_url(); ?>assets/web/assets/images/new_logo.png" alt="Logo">
             </a>
             <ul class="cd-header-buttons">
                <!--<li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>-->
@@ -76,25 +89,25 @@
         <nav class="cd-nav">
             <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
                <li>
-                  <i> <img src="https://img.icons8.com/material-outlined/24/000000/home--v2.png" height="auto"
+                  <i class="pdng_left_8"> <img src="<?php echo base_url(); ?>assets/web/assets/images/icons/home_icon.png" height="auto"
                         width="17px" /></i>
-                  <a href="<?php echo base_url(); ?>Home" class="animsition-link">Home</a>
+                  <a href="<?php echo base_url();?>Home" class="animsition-link">Home</a>
                </li>
                <li>
-                  <i> <img src="https://img.icons8.com/ios/50/000000/adoption.png" height="auto" width="17px" /></i>
-                  <a href="<?php echo base_url(); ?>parent" class="animsition-link">Parent</a>
+                  <i class="pdng_left_8"> <img src="<?php echo base_url(); ?>assets/web/assets/images/icons/parent_icon.png" height="auto" width="17px" /></i>
+                  <a href="<?php echo base_url(); ?>parent"class="animsition-link">Parent</a>
                </li>
                <li>
-                  <i><img src="https://img.icons8.com/ios/30/000000/teacher.png" height="auto" width="17px" /></i>
-                  <a href="<?php echo base_url(); ?>teacher" class="animsition-link">Teacher</a>
+                  <i class="pdng_left_8"><img src="<?php echo base_url(); ?>assets/web/assets/images/icons/teacher_icon.png" height="auto" width="17px" /></i>
+                  <a href="<?php echo base_url();?>teacher" class="animsition-link">Teacher</a>
                </li>
                <li>
-                  <i> <img src="https://img.icons8.com/ios/50/000000/students.png" height="auto" width="17px" /></i>
-                  <a href="<?php echo base_url(); ?>student" class="animsition-link">Student</a>
+                  <i class="pdng_left_8"> <img src="<?php echo base_url(); ?>assets/web/assets/images/icons/students_icon.png" height="auto" width="17px" /></i>
+                  <a href="<?php echo base_url();?>student" class="animsition-link">Student</a>
                </li>
                <li>
-                  <i><img src="https://img.icons8.com/ios/50/000000/shopping-cart.png" height="auto" width="17px" /></i>
-                  <a href="<?php echo base_url(); ?>cart" class="">cart</a>
+                  <i class="pdng_left_8"><img src="<?php echo base_url(); ?>assets/web/assets/images/icons/cart_icon.png" height="auto" width="17px" /></i>
+                  <a href="<?php echo base_url(); ?>cart" class="">Cart</a>
                </li>
 
                <li>
@@ -116,73 +129,80 @@
             <div class="uk-width-1-2@m uk-padding-large uk-flex uk-flex-middle uk-flex-center" data-uk-height-viewport>
                <div class="uk-width-3-4@s">
                   <div class="uk-text-center uk-margin-bottom">
-                     <a class="uk-logo uk-text-success uk-text-bold" href="../index.html">
+                     <a class="uk-logo uk-text-success uk-text-bold" href="<?php echo base_url(); ?>Home">
                         <!-- <img src="images/khoro_logo.png" alt=""> -->
                      </a>
                   </div>
                   <div class="uk-text-center uk-margin-medium-bottom">
-                     <h1 class="uk-letter-spacing-small" style="font-family:lato;">Please Board In</h1>
+                     <h1 class="uk-letter-spacing-small bord" style="font-family:lato;">Please Board In</h1>
                   </div>
-                  <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex uk-flex-center uk-margin">
-                     <div>
-                        <a href="#" data-uk-icon="icon: facebook"
-                           class="uk-icon-button uk-icon-button-large facebook"></a>
-                     </div>
-                     <div>
-                        <a href="#" data-uk-icon="icon:google"
-                           class="uk-icon-button uk-icon-button-large google-plus"></a>
-                     </div>
-                     <div>
-                        <a href="#" data-uk-icon="icon: linkedin"
-                           class="uk-icon-button uk-icon-button-large linkedin"></a>
-                     </div>
 
-
-                  </div>
-                  <div class="uk-text-center uk-margin">
-                     <p class="uk-margin-remove">Or use your email account:</p>
-                  </div>
-                  <form action="<?php echo base_url(); ?>signin_check" method="post">
+                  <form>
                      <div class="login-box">
                         <div class="user-box">
-                           <input type="text" name="email" required="">
+                           <input type="text" name="" required="">
                            <label>Email ID<span class="required-mark">*</span>
                            </label>
                         </div>
                         <div class="user-box">
-                           <input type="password" name="password" required="">
+                           <input type="password" name="" required="">
                            <label>Password<span class="required-mark">*</span>
                            </label>
+                        </div>
+
+                        <div class="uk-width-1-1 uk-margin uk-text-center">
+                           <a href="account_information.html" class="cd-read-more"
+                              style="color:n black;padding: 15px 30px 15px 30px;font-weight: 700; font-size: 14px;">Sign
+                              In</a>
                         </div>
                         <div class="uk-width-1-1 uk-margin uk-text-center">
                            <a class="uk-text-small uk-link-muted" href="#">Forgot your password?</a>
                         </div>
-                        <div class="uk-width-1-1 uk-margin uk-text-center">
-                           <button class="cd-read-more"
-                              style="color:n black;padding: 15px 30px 15px 30px;font-weight: 700; font-size: 14px;">Submit </button>
+
+
+                        <div class="uk-text-center uk-margin sign_m_tp">
+                           <p class="uk-margin-remove">Or use your social account:</p>
                         </div>
+
+                        <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex uk-flex-center ">
+                           <div>
+                              <a href="#" data-uk-icon="icon: facebook"
+                                 class="uk-icon-button uk-icon-button-large facebook"></a>
+                           </div>
+                           <div>
+                              <a href="#" data-uk-icon="icon:google"
+                                 class="uk-icon-button uk-icon-button-large google-plus"></a>
+                           </div>
+                           <div>
+                              <a href="#" data-uk-icon="icon: linkedin"
+                                 class="uk-icon-button uk-icon-button-large linkedin"></a>
+                           </div>
+
+                        </div>
+
                      </div>
                   </form>
                </div>
             </div>
             <div class="uk-width-1-2@m uk-padding-large uk-flex uk-flex-middle uk-flex-center uk-light
                     uk-background-cover uk-background-norepeat uk-background-blend-overlay uk-background-primary"
-               style="background-image: url(<?php echo base_url(); ?>assets/web/assets/pictures/website/signin_sign_up.jpg); opacity: 1;  background-color: rgb(105, 104, 104);"
-               data-uk-height-viewport>
+               style=" opacity: 1;  background-color: #f1c40f;" data-uk-height-viewport>
                <div>
                   <div class="uk-text-center">
                      <h2 class="uk-h1 uk-letter-spacing-small" style="font-family:lato;">Hello There, Join Us</h2>
                   </div>
                   <div class="uk-margin-top uk-margin-medium-bottom uk-text-center"
                      style=" color: black !important;font-family:lato;">
-                     <p  style=" color: #fff !important; font-family: lato !important; font-size: 20px; opacity: 1;">Enter your details and join the learning community</p>
+                     <p style=" color: #fff !important; font-family: lato !important; font-size: 20px; opacity: 1;">
+                        Enter your details and join the learning community</p>
                   </div>
                   <!-- <div class="uk-width-1-1 uk-text-center"  style="font-family:lato; " >
                         <a href="sign_up.html" class="uk-button uk-button-success-outline uk-button-large">Sign Up</a>
                       </div> -->
                   <div class="own_btn  uk-width-1-1 uk-text-center">
                      <a href="<?php echo base_url(); ?>signup" class="cd-read-more"
-                        style="color:black;padding: 15px 30px 15px 30px; font-size: 14px; font-weight: 700;">Sign Up</a>
+                        style="color:black; background-color: #fff; padding: 15px 30px 15px 30px; font-size: 14px; font-weight: 700;">Sign
+                        Up</a>
                   </div>
                </div>
             </div>
@@ -191,7 +211,7 @@
    </div>
    <!-- FOOTER
                ================================================== -->
-   <section class="section footer-1 section-padding-top-bottom">
+  <section class="section footer-1 section-padding-top-bottom">
       <div class="container">
          <div class="four columns" data-scroll-reveal="enter left move 200px over 0.5s after 0.8s">
             <a href="<?php echo base_url(); ?>Home" class="animsition-link">
@@ -201,16 +221,16 @@
             <div class="social-bottom">
                <ul class="list-social">
                   <li class="icon-soc">
-                     <a href="https://www.facebook.com/Korroboree">&#xf09a;</a>
+                     <a href="https://www.facebook.com/Korroboree" target="_blank">&#xf09a;</a>
                   </li>
                   <li class="icon-soc">
-                     <a href="https://www.linkedin.com/company/korroboree/">&#xf0e1;</a>
+                     <a href="https://www.linkedin.com/company/korroboree/" target="_blank">&#xf0e1;</a>
                   </li>
                   <li class="icon-soc">
-                     <a href="https://www.instagram.com/korroboree/">&#xf16d;</a>
+                     <a href="https://www.instagram.com/korroboree/" target="_blank">&#xf16d;</a>
                   </li>
                   <li class="icon-soc">
-                     <a href="https://www.youtube.com/channel/UC48jMdM7Jm39hq9M7AF-owA">&#xf16a;</a>
+                     <a href="https://www.youtube.com/channel/UC48jMdM7Jm39hq9M7AF-owA" target="_blank">&#xf16a;</a>
                   </li>
                </ul>
             </div>
@@ -219,15 +239,15 @@
             <h6>Information</h6>
             <p>
                <!-- <a href="#">About Us</a> <br/> <br/> -->
-               <a href="contact.html">Contact Us</a> <br /> <br />
-               <a href="terms_conditions.html">Terms &amp; Conditions</a> <br /> <br />
-               <a href="privacy_policy.html">Privacy Policy</a>
+               <a href="<?php echo base_url(); ?>contact">Contact Us</a> <br /> <br />
+               <a href="<?php echo base_url(); ?>terms_conditions">Terms of Service </a> <br /> <br />
+               <a href="<?php echo base_url(); ?>privacy_policy">Privacy Policy</a>
             </p>
          </div>
          <div class="four columns" data-scroll-reveal="enter right move 200px over 0.5s after 0.3s">
             <h6>Contact Us</h6>
             <p>
-               <a href="tel:+91 9820792077">+91 9820792077</a> <br />
+               <a href="tel:+91 9820792077">+91 7045457777</a> <br />
                <a href="mailto:connect@korroboree.com">connect@korroboree.com</a>
             </p>
          </div>
@@ -243,8 +263,8 @@
                      aria-required="true" aria-invalid="false" placeholder="Your Email Address">
                </span>
             </div>
-            <br /><br />
-            <div class="own_btn" style="margin-top: 15px;">
+            <br><br>
+            <div class="own_btn" style="margin-top: 15px; margin-bottom: 20px;">
                <a href="#" class="cd-read-more">Submit</a>
             </div>
          </div>
@@ -253,25 +273,26 @@
    <section class="section footer-bottom">
       <div class="container">
          <div class="sixteen columns">
-            <p>© ALL RIGHTS RESERVED. MADE BY 5TH Dimension Technologies <span id="year"></span></p>
+            <a href="http://5thdt.com/" target="_blank"><p>© ALL RIGHTS RESERVED. MADE BY 5TH Dimension Technologies <span id="year"></span></p></a>
          </div>
       </div>
    </section>
    </main>
+
+   
    <div id="WAButton"></div>
    <div class="scroll-to-top">&#xf106;</div>
    </div>
    <!-- JAVASCRIPT
          ================================================== -->
+
    <script type="text/javascript" src="<?php echo base_url(); ?>assets/web/assets/js/jquery-2.1.1.js"></script>
-
    <!--Jquery-->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
    <!--Floating WhatsApp javascript-->
    <script type="text/javascript"
       src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
 
    <script type="text/javascript" src="<?php echo base_url(); ?>assets/web/assets/js/modernizr.custom.js"></script>
    <script type="text/javascript" src="<?php echo base_url(); ?>assets/web/assets/js/jquery.mobile.custom.min.js"></script>
@@ -358,7 +379,7 @@
    <script type="text/javascript">
       $(function () {
          $('#WAButton').floatingWhatsApp({
-            phone: '1231231231', //WhatsApp Business phone number International format-
+            phone: '+91 7045457777', //WhatsApp Business phone number International format-
             //Get it with Toky at https://toky.co/en/features/whatsapp.
             headerTitle: 'Chat with us on WhatsApp!', //Popup Title
             popupMessage: 'Hello, how can we help you?', //Popup Message

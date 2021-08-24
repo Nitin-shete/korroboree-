@@ -6,21 +6,27 @@ class Home extends CI_Controller {
     {
         parent::__construct();
        
-        $this->load->helper('form','url');
+        $this->load->helper('form','url','text');
 		$this->load->library('form_validation','upload');
 		
         $this->load->database();
+        $this->load->model('web/Slider_text');
 
- 
+  
     }
 	
 
     
 public function index()
 	{
-	    $this->load->view('web/header');
-    	$this->load->view('web/home');
-    	$this->load->view('web/footer');
+        
+          $data['v']=$this->Slider_text->intro_slider();
+         $data1['k']=$this->Slider_text->main_slider();
+        // $data2['sub']=$this->Slider_text->sub_slider();
+          $data2['sub']=$this->Slider_text->sub_slider_home();
+	       
+          $this->load->view('web/home', $data+$data1+$data2);
+          $this->load->view('web/footer');
 
 	}
 
@@ -71,7 +77,7 @@ public function  teacher_video()
 	public function sign_up()
     {
     	$this->load->view('web/sign_up');
-    	$this->load->view('web/footer');
+    	// $this->load->view('web/footer');
 
 
 	}
@@ -103,14 +109,14 @@ public function lina_bio()
     {
 	     $this->load->view('web/header');
     	$this->load->view('web/terms_conditions');
-    	$this->load->view('web/footer');
+    	// $this->load->view('web/footer');
 
 	}
 	public function privacy_policy()
     {
 	     $this->load->view('web/header');
     	$this->load->view('web/privacy_policy');
-    	$this->load->view('web/footer');
+    	// $this->load->view('web/footer');
 
 	}
 	public function contact()
